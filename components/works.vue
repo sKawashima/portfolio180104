@@ -4,12 +4,12 @@ section#works-list
     .line
   .items
     .item#w0
-      img(src="~/assets/soracamera.com.png")
+      img(src="~/static/soracamera.com.png")
       .desc
         h1 タイトル
         p 製作期間とか
     .item#w1
-      img(src="~/assets/soracamera.com.png")
+      img(src="~/static/soracamera.com.png")
       .desc
         h1 タイトル
         p 製作期間とか

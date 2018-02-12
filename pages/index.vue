@@ -40,15 +40,15 @@ body
 
 @font-face
   font-family: TextaAlt-Thin
-  src: url(~/assets/TextaAlt-Thin-webfont.woff)
+  src: url(~/static/TextaAlt-Thin-webfont.woff)
 
 @font-face
   font-family: Texta-Thin
-  src: url(~/assets/Texta-Thin-webfont.woff)
+  src: url(~/static/Texta-Thin-webfont.woff)
 
 @font-face
   font-family: Texta-Heavy
-  src: url(~/assets/Texta-Heavy-webfont.woff)
+  src: url(~/static/Texta-Heavy-webfont.woff)
 </style>
 
 <style lang="sass" scoped>
