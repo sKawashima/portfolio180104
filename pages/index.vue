@@ -2,22 +2,31 @@
 section.container
   topview
   gradation
+  nav
   h1#works.title Works
   works
   h1#profile.title Profile
+  profile
   h1#contact.title Contact
+  contact
 </template>
 
 <script>
 import topview from '~/components/topview.vue'
 import gradation from '~/components/gradation.vue'
+import nav from '~/components/nav.vue'
 import works from '~/components/works.vue'
+import profile from '~/components/profile.vue'
+import contact from '~/components/contact.vue'
 
 export default {
   components: {
     topview,
     gradation,
-    works
+    nav,
+    works,
+    profile,
+    contact
   }
 }
 </script>
