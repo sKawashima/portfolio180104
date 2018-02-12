@@ -26,7 +26,7 @@ export default {
   width: 100%
   min-height: 500px
   background-color: #4e1a68
-  background: linear-gradient(#4e1a68, lighten(#4e1a68 ,40%))
+  background: linear-gradient(#4e1a68, lighten(#4e1a68 ,25%))
   z-index: 5
   .logo
     width: 150px

@@ -2,35 +2,32 @@
 section.container
   topview
   gradation
-  h1.title Works
-  |
-  h2.subtitle
-    | portfolio with nuxt
-  |
-  .links
-    nuxt-link(to='template') &#x30DA;&#x30FC;&#x30B8;&#x9077;&#x79FB;&#x306E;&#x30C6;&#x30B9;&#x30C8;
-    |
-    a.button--green(href='https://nuxtjs.org/', target='_blank') Documentation
-    |
-    a.button--grey(href='https://github.com/nuxt/nuxt.js', target='_blank') GitHub
+  h1#works.title Works
+  works
+  h1#profile.title Profile
+  h1#contact.title Contact
 </template>
 
 <script>
 import topview from '~/components/topview.vue'
 import gradation from '~/components/gradation.vue'
+import works from '~/components/works.vue'
 
 export default {
   components: {
     topview,
-    gradation
+    gradation,
+    works
   }
 }
 </script>
 
 <style lang="sass">
-html,body
-  // background-color: #4e1a68
+html
+  background-color: #4e1a68
   font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif
+body
+  background-color: #fff
 
 @font-face
   font-family: TextaAlt-Thin
@@ -60,6 +57,7 @@ html,body
   font-size: 3.33em
   color: desaturate(#4e1a68, 30%)
   letter-spacing: 1px
+  margin-top: 25px
 
 .subtitle
   font-weight: 300

@@ -16,6 +16,7 @@ export default {
   justify-content: space-around
   flex-flow: column
   align-items: center
+  z-index: 5
 .welcome
   color: white
   font-family: Texta-Thin
