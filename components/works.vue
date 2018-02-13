@@ -3,16 +3,36 @@ section#works-list
   .backline
     .line
   .items
-    .item#w0
-      img(src="~/static/soracamera.com.png")
+    a.item(href="http://soracamera.com/" target="_blank")
+      img.thumb(src="~/static/soracamera.png")
       .desc
-        h1 タイトル
-        p 製作期間とか
-    .item#w1
-      img(src="~/static/soracamera.com.png")
+        h1 ハコダテソラカメラプロジェクト
+          span.genre.genre-web Web
+        .workgrid
+          p.h 活動
+          p.main 課外活動
+          p.h 担当
+          p.main デザイン（一部）・実装
+          p.h 制作期間
+          p.main 3 weeks
+          p.h 使用技術
+          p.main Illustrator / HTML / SCSS
+        p.summary 函館の魅力を伝える映像を制作するプロジェクト「ハコダテソラカメラ」の活動記録として制作しました。
+    .item
+      img.thumb(src="~/static/funtousic.png")
       .desc
-        h1 タイトル
-        p 製作期間とか
+        h1 funtousic
+          span.genre.genre-web Web
+        .workgrid
+          p.h 活動
+          p.main 課外活動
+          p.h 担当
+          p.main デザイン（一部）・実装
+          p.h 制作期間
+          p.main 3 weeks
+          p.h 使用技術
+          p.main Illustrator / HTML / SCSS
+        p.summary 函館の魅力を伝える映像を制作するプロジェクト「ハコダテソラカメラ」の活動記録として制作しました。
 </template>
 
 <script>
@@ -37,6 +57,11 @@ export default {
 
 <style lang="sass" scoped>
 $boader-width: 1px
+
+a
+  text-decoration: none
+  &:link, &:visited, &:hover, &:active
+    color: #000
 
 #works-list
   width: 100%
@@ -73,19 +98,42 @@ $boader-width: 1px
       width: 100%
       transition: .3s
       margin-top: 20px
-      padding: 5px
-      border: 1px rgba(#4e1a68, 0) solid
+      padding: 10px
+      border: 1px rgba(#4e1a68, 0) dotted
       box-sizing: border-box
-      img
+      .thumb
         width: 470px
         height: auto
         align-self: flex-start
+        box-shadow: 0 0 8px gray
       .desc
         width: 470px
         text-align: left
-        font-size: .8em
+        .genre
+          padding: 3px
+          margin-top: 10px
+          margin-left: 10px
+          font-size: .7em
+          border-radius: 5px
+          font-weight: normal
+          color: #fff
+        .genre-web
+          background-color: #0C4842
+        .genre-proposal
+          background-color: #9F353A
+        .workgrid
+          margin-top: 15px
+          display: grid
+          grid-template-columns: auto 1fr
+          .h
+            margin-right: 10px
+            text-align: right
+            &::after
+              content: '：'
+        .summary
+          margin-top: 20px
       &:hover
         // background-color: #fff
-        border: 1px #4e1a68 solid
+        border: 1px #4e1a68 dotted
         // padding: 10px
 </style>
