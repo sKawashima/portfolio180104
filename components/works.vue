@@ -3,6 +3,23 @@ section#works-list
   .backline
     .line
   .items
+    a.item(href="~/static/mahounoyuenchi.png" target="_blank")
+      img.thumb(src="~/static/mahounoyuenchi.png")
+      .desc
+        h1 はこだてみらい館「まほうのゆうえんち」ポスター
+        .workgrid
+          p.h 活動
+          p.main 課外活動
+          p.h 活動人数
+          p.main 1人
+          p.h 担当
+          p.main デザイン
+          p.h 制作期間
+          p.main 1day
+          p.h 使用技術
+          p.main Photoshop
+        p.summary 運営コンソーシアムより依頼を受けて制作。
+
     a.item(href="https://skawashima.com/temp/baloon.html" target="_blank")
       img.thumb(src="~/static/baloon.png")
       .desc
@@ -20,7 +37,7 @@ section#works-list
           p.main 1day
           p.h 使用技術
           p.main XD / pug,Sass / TypeScript / CANVAS / WordPress
-        p.summary はこだてみらい館にて開催された企画展「ふうせんの森」の特設ページを運営コンソーシアムより依頼を受けて制作。
+        p.summary 運営コンソーシアムより依頼を受けて制作。
         p.summary 企画展のテーマである「風船に重りを吊るしてちょうど良く浮かばせる」を、ページ内のインタラクティブなコンテンツとして再現。
     a.item(href="https://photos.app.goo.gl/PtQuQ569RDGNlrz92" target="_blank")
       img.thumb(src="~/static/aokuototo.jpg")
@@ -76,7 +93,7 @@ section#works-list
           p.main 3weeks
           p.h 使用技術
           p.main Illustrator / HTML,SCSS
-        p.summary 函館の魅力を伝える映像を制作するプロジェクト「ハコダテソラカメラ」の活動記録として制作した。
+        p.summary 函館の魅力を伝える映像を制作するプロジェクト「ハコダテソラカメラ」の活動記録として制作。
     .item
       iframe.thumb.thumb-youtube(src="https://www.youtube.com/embed/Ghyb2fYJDUo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
       .desc
@@ -93,7 +110,7 @@ section#works-list
           p.main 1day(イベント当日)
           p.h 使用技術
           p.main AviUtl
-        p.summary イベントで起きたことをその日の終わりに見て振り返るために当日中に制作した。
+        p.summary イベントで起きたことをその日の終わりに見て振り返るために当日中に制作。
     a.item(href="http://skawashima.github.io/skawashima.com/funtousic/" target="_blank")
       img.thumb(src="~/static/funtousic.png")
       .desc
@@ -113,9 +130,9 @@ section#works-list
           p.main 2months
           p.h 使用技術
           p.main HTML,CSS / AviUtl / Ableton Live
-        p.summary 触れられない物を触れられる「タンジブル」な提案をする授業課題の成果として制作した。
-        p.summary <b>音を触ることが出来る球体デバイス</b>を提案し、それをプロモーションするWebサイトを制作した。
-          | また、音を触るイメージを持ってもらうための映像と、その映像に使うための楽曲を制作した。
+        p.summary 触れられない物を触れられる「タンジブル」な提案をする授業課題の成果として制作。
+        p.summary <b>音を触ることが出来る球体デバイス</b>を提案し、それをプロモーションするWebサイトを制作。
+          | また、音を触るイメージを持ってもらうための映像と、その映像に使うための楽曲を制作。
         p.summary この提案は、授業成果発表会「はこだて未来展2015」において最優秀賞を受賞。
 </template>
 
