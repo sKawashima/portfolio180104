@@ -7,8 +7,8 @@ section#works-list
       img.thumb(src="~/static/aokuototo.jpg")
       .desc
         h1 個人展覧会「青ク音ト」
-          span.genre.genre-movie Movie
           span.genre.genre-music Music
+          span.genre.genre-movie Movie
           span.genre.genre-art Art
         .workgrid
           p.h 活動
@@ -16,13 +16,13 @@ section#works-list
           p.h 活動人数
           p.main 5人
           p.h 担当
-          p.main 作曲 / 映像制作 / 空間演出 / 公開作曲 / 共同作曲
+          p.main 作曲 / 映像制作 / 空間演出 / 公開作曲
           p.h 開催期間
           p.main 2016/10/26 - 2016/11/25
           p.h 使用技術
           p.main Ableton Live / After Effects / Premire Pro
-        p.summary 駅前「はこだてみらい館」の一部を借りて楽曲とその楽曲のMVを展示。
-        p.summary はこだてみらい館発の函館のアーティストによる館内演出企画。
+        p.summary はこだてみらい館にて楽曲とその楽曲のMVを展示。
+        p.summary はこだてみらい館初の函館のアーティストによる館内演出企画。
         p.summary [補足]はこだてみらい館の館内BGMは全て川島の作品。
     a.item(href="http://hakodate-miraiproject.jp/pre-comming/" target="_blank")
       img.thumb(src="~/static/hmp-pre.png")
@@ -166,6 +166,7 @@ a
       padding: 10px
       border: 1px rgba(#4e1a68, 0) dotted
       box-sizing: border-box
+      background-color: rgba(#fff, 0)
       .thumb
         width: 470px
         height: auto
@@ -205,8 +206,11 @@ a
               content: '：'
         .summary
           margin-top: 20px
-      &:hover
-        // background-color: #fff
-        border: 1px #4e1a68 dotted
-        // padding: 10px
+    a.item:hover
+      // background-color: #fff
+      // border: 1px #4e1a68 dotted
+      // padding: 10px
+      box-shadow: 0 0 50px rgba(#4e1a68, .7)
+      background-color: rgba(#fff, .9)
+      // background: radial-gradient(#fff, rgba(#fff, .8))
 </style>
