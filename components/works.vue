@@ -3,6 +3,25 @@ section#works-list
   .backline
     .line
   .items
+    a.item(href="https://skawashima.com/temp/baloon.html" target="_blank")
+      img.thumb(src="~/static/baloon.png")
+      .desc
+        h1 はこだてみらい館「ふうせんの森」特設ページ
+          span.genre.genre-web Web
+          span.genre.genre-proposal 提案
+        .workgrid
+          p.h 活動
+          p.main 課外活動
+          p.h 活動人数
+          p.main 2人
+          p.h 担当
+          p.main デザイン（一部） / 開発 / コンテンツ提案
+          p.h 制作期間
+          p.main 1day
+          p.h 使用技術
+          p.main XD / pug,Sass / TypeScript / CANVAS / WordPress
+        p.summary はこだてみらい館にて開催された企画展「ふうせんの森」の特設ページを運営コンソーシアムより依頼を受けて制作。
+        p.summary 企画展のテーマである「風船に重りを吊るしてちょうど良く浮かばせる」を、ページ内のインタラクティブなコンテンツとして再現。
     a.item(href="https://photos.app.goo.gl/PtQuQ569RDGNlrz92" target="_blank")
       img.thumb(src="~/static/aokuototo.jpg")
       .desc
