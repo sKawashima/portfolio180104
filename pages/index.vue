@@ -2,31 +2,34 @@
 section.container
   topview
   gradation
-  nav
+  navi
   h1#works.title Works
   works
-  h1#profile.title Profile
-  profile
-  h1#contact.title Contact
-  contact
+  //- h1#profile.title Profile
+  //- profile
+  //- h1#contact.title Contact
+  //- contact
+  copyright
 </template>
 
 <script>
 import topview from '~/components/topview.vue'
 import gradation from '~/components/gradation.vue'
-import nav from '~/components/nav.vue'
+import navi from '~/components/nav.vue'
 import works from '~/components/works.vue'
 import profile from '~/components/profile.vue'
 import contact from '~/components/contact.vue'
+import copyright from '~/components/footer.vue'
 
 export default {
   components: {
     topview,
     gradation,
-    nav,
+    navi,
     works,
     profile,
-    contact
+    contact,
+    copyright
   }
 }
 </script>
@@ -54,6 +57,7 @@ body
 <style lang="sass" scoped>
 .container
   min-height: 100vh
+  min-width: 1000px
   display: flex
   flex-flow: column
   justify-content: flex-start
