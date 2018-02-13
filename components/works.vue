@@ -18,6 +18,8 @@ section#works-list
           p.main 考案・デザイン・開発
           p.h 制作期間
           p.main 1week
+          p.h 制作時期
+          p.main 2018年1月
           p.h 使用技術
           p.main Nuxt / Vue / pug / Sass / Javascript
         p.summary 髪型が隠れた人の写真を重ねれば、個性のない顔が生まれるんじゃないか。
@@ -37,6 +39,8 @@ section#works-list
           p.main デザイン
           p.h 制作期間
           p.main 1day
+          p.h 制作時期
+          p.main 2017年12月
           p.h 使用技術
           p.main Photoshop
         p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
@@ -55,6 +59,8 @@ section#works-list
           p.main デザイン（一部） / 開発 / コンテンツ提案
           p.h 制作期間
           p.main 1day
+          p.h 制作時期
+          p.main 2017年11月
           p.h 使用技術
           p.main XD / pug,Sass / TypeScript / CANVAS / WordPress
         p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
@@ -80,6 +86,29 @@ section#works-list
         p.summary はこだてみらい館にて楽曲とその楽曲のMVを展示。
         p.summary はこだてみらい館初の函館のアーティストによる館内演出企画。
         p.summary [補足]はこだてみらい館の館内BGMは全て川島の作品。
+    .item
+      iframe.thumb.thumb-youtube(src="https://www.youtube.com/embed/ul64n1XeK8Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+      .desc
+        h1 @0314 -nil history-
+          span.genre.genre-art Art
+          span.genre.genre-music Music
+          span.genre.genre-movie Movie
+        .workgrid
+          p.h 活動
+          p.main アーティスト活動
+          p.h 活動人数
+          p.main 1人
+          p.h 担当
+          p.main 作曲 / 映像制作
+          p.h 制作期間
+          p.main 1month
+          p.h 制作時期
+          p.main 2017年10月
+          p.h 使用技術
+          p.main Ableton Live / After Effects
+        p.summary 個人展覧会「青ク音ト」のために制作。
+        p.summary 理想の崩壊、虚無、あったはずの歴史を表現した。
+        p.summary 現代音楽、現代映像に挑んだ。
     a.item(href="http://hakodate-miraiproject.jp/pre-comming/" target="_blank")
       img.thumb(src="~/static/hmp-pre.png")
       .desc
@@ -94,9 +123,34 @@ section#works-list
           p.main デザイン（一部） / 実装全般
           p.h 制作期間
           p.main 1day
+          p.h 制作時期
+          p.main 2016年9月
           p.h 使用技術
           p.main Illustrator / HTML,Sass / PHP
         p.summary 函館駅前に新たに設置される「はこだてみらい館」と「はこだてキッズプラザ」の告知のため、運営コンソーシアムより依頼され制作。
+    a.item(href="http://funifd.com/exhibition/ucd2015/" target="_blank")
+      img.thumb(src="~/static/mirainohakobasu.png")
+      .desc
+        h1 ミライノハコバス
+          span.genre.genre-web Web
+          span.genre.genre-movie Movie
+          span.genre.genre-music Music
+        .workgrid
+          p.h 活動
+          p.main 課外活動
+          p.h 活動人数
+          p.main 3人
+          p.h 担当
+          p.main Web制作リーダー / デザイン / 実装 / 映像制作
+          p.h 制作期間
+          p.main 1weeks
+          p.h 制作時期
+          p.main 2015年12月
+          p.h 使用技術
+          p.main Illustrator / HTML,SCSS / AviUtl / Ableton Live
+        p.summary 「函館バスの未来のあり方を考える」という授業課題の成果発表会の告知と記録として制作。
+        p.summary この展示会は、歴代の展覧会において過去最多来場者数を記録。
+        p.summary リーダーとして、タスク管理やマネジメント等を初挑戦した。
     a.item(href="http://soracamera.com/" target="_blank")
       img.thumb(src="~/static/soracamera.png")
       .desc
@@ -111,6 +165,8 @@ section#works-list
           p.main デザイン（一部） / 実装
           p.h 制作期間
           p.main 3weeks
+          p.h 制作時期
+          p.main 2015年11月
           p.h 使用技術
           p.main Illustrator / HTML,SCSS
         p.summary 函館の魅力を伝える映像を制作するプロジェクト「ハコダテソラカメラ」の活動記録として制作。
@@ -128,6 +184,8 @@ section#works-list
           p.main 映像編集
           p.h 制作期間
           p.main 1day(イベント当日)
+          p.h 制作時期
+          p.main 2014年2月
           p.h 使用技術
           p.main AviUtl
         p.summary イベントで起きたことをその日の終わりに見て振り返るために当日中に制作。
@@ -148,6 +206,8 @@ section#works-list
           p.main 提案 / Webサイト制作 / イメージ映像 / 映像BGM
           p.h 制作期間
           p.main 2months
+          p.h 制作時期
+          p.main 2014年11月~1月
           p.h 使用技術
           p.main HTML,CSS / AviUtl / Ableton Live
         p.summary 触れられない物を触れられる「タンジブル」な提案をする授業課題の成果として制作。
