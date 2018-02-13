@@ -3,10 +3,10 @@ section#works-list
   .backline
     .line
   .items
-    a.item(href="~/static/mahounoyuenchi.png" target="_blank")
+    a.item#w0(href="~/static/mahounoyuenchi.png" target="_blank")
       img.thumb(src="~/static/mahounoyuenchi.png")
       .desc
-        h1 はこだてみらい館「まほうのゆうえんち」ポスター
+        h1 「まほうのゆうえんち」ポスター
         .workgrid
           p.h 活動
           p.main 課外活動
@@ -18,12 +18,12 @@ section#works-list
           p.main 1day
           p.h 使用技術
           p.main Photoshop
-        p.summary 運営コンソーシアムより依頼を受けて制作。
+        p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
 
     a.item(href="https://skawashima.com/temp/baloon.html" target="_blank")
       img.thumb(src="~/static/baloon.png")
       .desc
-        h1 はこだてみらい館「ふうせんの森」特設ページ
+        h1 「ふうせんの森」特設ページ
           span.genre.genre-web Web
           span.genre.genre-proposal 提案
         .workgrid
@@ -37,7 +37,7 @@ section#works-list
           p.main 1day
           p.h 使用技術
           p.main XD / pug,Sass / TypeScript / CANVAS / WordPress
-        p.summary 運営コンソーシアムより依頼を受けて制作。
+        p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
         p.summary 企画展のテーマである「風船に重りを吊るしてちょうど良く浮かばせる」を、ページ内のインタラクティブなコンテンツとして再現。
     a.item(href="https://photos.app.goo.gl/PtQuQ569RDGNlrz92" target="_blank")
       img.thumb(src="~/static/aokuototo.jpg")
@@ -169,7 +169,7 @@ a
   height: auto
   position: relative
   margin-top: 20px
-  padding: 20px 0
+  padding: 50px 0
   .backline
     width: 100%
     height: 100%
@@ -197,7 +197,7 @@ a
       justify-content: space-between
       height: auto
       width: 100%
-      transition: .3s
+      transition: .2s
       margin-top: 50px
       padding: 10px
       border: 1px rgba(#4e1a68, 0) dotted
@@ -246,7 +246,7 @@ a
       // background-color: #fff
       // border: 1px #4e1a68 dotted
       // padding: 10px
-      box-shadow: 0 0 50px rgba(#4e1a68, .7)
+      box-shadow: 0 0 30px rgba(#4e1a68, .7)
       background-color: rgba(#fff, .9)
       // background: radial-gradient(#fff, rgba(#fff, .8))
 </style>

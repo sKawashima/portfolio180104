@@ -1,5 +1,6 @@
 <template lang="pug">
 #gradation
+  .welcome 
 </template>
 
 <script>
@@ -20,5 +21,5 @@ export default {
 .welcome
   color: white
   font-family: Texta-Thin
-  font-size: 2.5em
+  font-size: 1.5em
 </style>
