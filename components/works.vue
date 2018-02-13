@@ -109,6 +109,26 @@ section#works-list
         p.summary 個人展覧会「青ク音ト」のために制作。
         p.summary 理想の崩壊、虚無、あったはずの歴史を表現した。
         p.summary 現代音楽、現代映像に挑んだ。
+    .item
+      img.thumb(src="~/static/hmp.png")
+      .desc
+        h1 はこだてみらいプロジェクト
+          span.genre.genre-web Web
+        .workgrid
+          p.h 活動
+          p.main 課外活動
+          p.h 活動人数
+          p.main 5人
+          p.h 担当
+          p.main 実装（フロント補助 / バック全般）
+          p.h 制作期間
+          p.main 3months
+          p.h 制作時期
+          p.main 2016年12月
+          p.h 使用技術
+          p.main Illustrator / HTML,Sass / PHP / WordPress
+        p.summary 運営コンソーシアムより依頼され制作。
+        p.summary 公開から1年と3ヶ月の間、運営・保守を担当。
     a.item(href="http://hakodate-miraiproject.jp/pre-comming/" target="_blank")
       img.thumb(src="~/static/hmp-pre.png")
       .desc
