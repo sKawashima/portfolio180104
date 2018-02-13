@@ -27,6 +27,7 @@ section#works-list
       img.thumb(src="~/static/mahounoyuenchi.png")
       .desc
         h1 「まほうのゆうえんち」ポスター
+          span.genre.genre-graphic Graphic
         .workgrid
           p.h 活動
           p.main 課外活動
@@ -234,8 +235,9 @@ a
         text-align: left
         .genre
           padding: 4px 5px
-          margin-top: 10px
+          // margin-top: 10px
           margin-left: 10px
+          // margin-bottom: 1.5em
           font-size: .7em
           border-radius: 5px
           font-weight: bold
@@ -250,6 +252,8 @@ a
           background-color: #4A225D
         .genre-art
           background-color: #946243
+        .genre-graphic
+          background-color: #35269d
         .workgrid
           margin-top: 15px
           display: grid
