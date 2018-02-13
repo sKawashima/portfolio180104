@@ -16,7 +16,22 @@ section#works-list
 </template>
 
 <script>
+// import axios from 'axios'
+
 export default {
+  // data () {
+  //   return {
+  //     works: []
+  //   }
+  // },
+  // methods: {
+  //   getWorks () {
+  //     return axios.get('~/static/works.json')
+  //       .then((res) => {
+  //         this.set(this, this.works, res.data)
+  //       })
+  //   }
+  // }
 }
 </script>
 
@@ -49,8 +64,6 @@ $boader-width: 1px
     flex-flow: column
     justify-content: center
     align-items: center
-    box-sizing: border-box
-    border: 1px rgba(#4e1a68, 0) solid
     #w0
       margin-top: 0
     .item
@@ -60,6 +73,9 @@ $boader-width: 1px
       width: 100%
       transition: .3s
       margin-top: 20px
+      padding: 5px
+      border: 1px rgba(#4e1a68, 0) solid
+      box-sizing: border-box
       img
         width: 470px
         height: auto
@@ -71,5 +87,5 @@ $boader-width: 1px
       &:hover
         // background-color: #fff
         border: 1px #4e1a68 solid
-        padding: 10px
+        // padding: 10px
 </style>
