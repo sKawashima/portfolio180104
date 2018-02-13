@@ -3,7 +3,27 @@ section#works-list
   .backline
     .line
   .items
-    a.item#w0(href="~/static/mahounoyuenchi.png" target="_blank")
+    .item#w0
+      img.thumb(src="~/static/personality.png")
+      .desc
+        h1 Personality
+          span.genre.genre-art Art
+          span.genre.genre-web Web
+        .workgrid
+          p.h 活動
+          p.main 授業課題
+          p.h 活動人数
+          p.main 1人
+          p.h 担当
+          p.main 考案・デザイン・開発
+          p.h 制作期間
+          p.main 1week
+          p.h 使用技術
+          p.main Nuxt / Vue / pug / Sass / Javascript
+        p.summary 髪型が隠れた人の写真を重ねれば、個性のない顔が生まれるんじゃないか。
+        p.summary 同じ髪型と同じ服装で人を選ぶ社会に対する主張を持ったメディアアート。
+  .items
+    a.item(href="~/static/mahounoyuenchi.png" target="_blank")
       img.thumb(src="~/static/mahounoyuenchi.png")
       .desc
         h1 「まほうのゆうえんち」ポスター
@@ -19,7 +39,6 @@ section#works-list
           p.h 使用技術
           p.main Photoshop
         p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
-
     a.item(href="https://skawashima.com/temp/baloon.html" target="_blank")
       img.thumb(src="~/static/baloon.png")
       .desc
@@ -242,11 +261,13 @@ a
               content: '：'
         .summary
           margin-top: 20px
+    .item:hover
+      background-color: rgba(#fff, .9)
+      box-shadow: 0 0 10px rgba(desaturate(#4e1a68, 50), .7)
     a.item:hover
       // background-color: #fff
       // border: 1px #4e1a68 dotted
       // padding: 10px
       box-shadow: 0 0 30px rgba(#4e1a68, .7)
-      background-color: rgba(#fff, .9)
       // background: radial-gradient(#fff, rgba(#fff, .8))
 </style>
