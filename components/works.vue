@@ -25,7 +25,7 @@ section#works-list
         p.summary 髪型が隠れた人の写真を重ねれば、個性のない顔が生まれるんじゃないか。
         p.summary 同じ髪型と同じ服装で人を選ぶ社会に対する主張を持ったメディアアート。
   .items
-    a.item(href="~/static/mahounoyuenchi.png" target="_blank")
+    .item
       img.thumb(src="~/static/mahounoyuenchi.png")
       .desc
         h1 「まほうのゆうえんち」ポスター
