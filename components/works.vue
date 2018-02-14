@@ -234,6 +234,26 @@ section#works-list
         p.summary <b>音を触ることが出来る球体デバイス</b>を提案し、それをプロモーションするWebサイトを制作。
           | また、音を触るイメージを持ってもらうための映像と、その映像に使うための楽曲を制作。
         p.summary この提案は、授業成果発表会「はこだて未来展2015」において最優秀賞を受賞。
+    .item
+      img.thumb(src="~/static/goryokaku.jpg")
+      .desc
+        h1 ポスター「もっとすごくなるはずだった五稜郭」
+          span.genre.genre-graphic Graphic
+        .workgrid
+          p.h 活動
+          p.main 授業課題
+          p.h 活動人数
+          p.main 1人
+          p.h 担当
+          p.main デザイン / 取材 / 調査
+          p.h 制作期間
+          p.main 1months
+          p.h 制作時期
+          p.main 2014年6月
+          p.h 使用技術
+          p.main Illustrator
+        p.summary 「函館の面白い歴史を図解して紹介する」という課題の成果として制作。
+        p.summary 人生初の受け手を意識した「デザイン」成果。
 </template>
 
 <script>
