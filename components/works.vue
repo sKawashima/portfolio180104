@@ -130,6 +130,26 @@ section#works-list
           p.main Ableton Live
         p.summary 映像はtorinos氏に依頼。
     .item
+      iframe.thumb.thumb-youtube(src="https://www.youtube.com/embed/dwY9yOOIDZk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+      .desc
+        h1 諦めと戒め
+          span.genre.genre-art Art
+          span.genre.genre-music Music
+        .workgrid
+          p.h 活動
+          p.main アーティスト活動
+          p.h 活動人数
+          p.main 2人
+          p.h 担当
+          p.main 作曲
+          p.h 制作期間
+          p.main 1month
+          p.h 制作時期
+          p.main 2017年10月
+          p.h 使用技術
+          p.main Ableton Live
+        p.summary 映像はCHARLII_k氏に依頼。
+    .item
       img.thumb(src="~/static/hmp.png")
       .desc
         h1 はこだてみらいプロジェクト
