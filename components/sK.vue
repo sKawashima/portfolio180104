@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" scoped>
 .cls
   fill: none
   // stroke: #4e1a68

@@ -38,8 +38,6 @@ export default {
 html
   background-color: #4e1a68
   font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif
-body
-  background-color: #fff
 
 @font-face
   font-family: TextaAlt-Thin
@@ -63,6 +61,7 @@ body
   justify-content: flex-start
   align-items: center
   text-align: center
+  background-color: #fff
 
 .title
   font-family: Texta-Thin
