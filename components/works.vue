@@ -85,7 +85,7 @@ section#works-list
           p.main Ableton Live / After Effects / Premire Pro
         p.summary はこだてみらい館にて楽曲とその楽曲のMVを展示。
         p.summary はこだてみらい館初の函館のアーティストによる館内演出企画。
-        p.summary [補足]はこだてみらい館の館内BGMは全て川島の作品。
+        p.summary [補足] はこだてみらい館の館内BGMは全て川島の作品。
     .item
       iframe.thumb.thumb-youtube(src="https://www.youtube.com/embed/ul64n1XeK8Q?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
       .desc
@@ -106,9 +106,8 @@ section#works-list
           p.main 2017年10月
           p.h 使用技術
           p.main Ableton Live / After Effects
-        p.summary 個人展覧会「青ク音ト」のために制作。
+        p.summary 個人展覧会「青ク音ト」のために制作。現代音楽、現代映像。
         p.summary 理想の崩壊、虚無、あったはずの歴史を表現した。
-        p.summary 現代音楽、現代映像に挑んだ。
     .item
       iframe.thumb.thumb-youtube(src="https://www.youtube.com/embed/-qtx1VQ0ozA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
       .desc
