@@ -339,78 +339,90 @@ a
       width: calc(50% + #{$boader-width} / 2)
       height: 100%
       border-right: $boader-width #4e1a68 solid
-  .items
-    width: 1000px
-    position: relative
-    left: 0
-    right: 0
-    margin: auto
+.items
+  width: 1000px
+  position: relative
+  left: 0
+  right: 0
+  margin: auto
+  display: flex
+  flex-flow: column
+  justify-content: center
+  align-items: center
+  @media screen and (max-width: 768px)
+    width: auto
+  #w0
+    margin-top: 0
+  .item
     display: flex
-    flex-flow: column
-    justify-content: center
-    align-items: center
-    #w0
-      margin-top: 0
-    .item
-      display: flex
-      justify-content: space-between
-      height: auto
-      width: 100%
-      transition: .2s
-      margin-top: 50px
-      padding: 10px
-      border: 1px rgba(#4e1a68, 0) dotted
-      box-sizing: border-box
-      background-color: rgba(#fff, 0)
-      .thumb
-        width: 470px
-        height: auto
-        align-self: flex-start
-        box-shadow: 0 0 8px gray
-      .thumb-youtube
-        height: calc(470px / 560 * 315)
-      .desc
-        width: 470px
-        text-align: left
-        .genre
-          padding: 4px 5px
-          // margin-top: 10px
-          margin-left: 10px
-          // margin-bottom: 1.5em
-          font-size: .7em
-          border-radius: 5px
-          font-weight: bold
-          color: #fff
-        .genre-web
-          background-color: #0C4842
-        .genre-proposal
-          background-color: #9F353A
-        .genre-movie
-          background-color: #08192D
-        .genre-music
-          background-color: #4A225D
-        .genre-art
-          background-color: #946243
-        .genre-graphic
-          background-color: #35269d
-        .workgrid
-          margin-top: 15px
-          display: grid
-          grid-template-columns: auto 1fr
-          .h
-            margin-right: 10px
-            text-align: right
-            &::after
-              content: '：'
-        .summary
-          margin-top: 20px
-    .item:hover
+    justify-content: space-between
+    height: auto
+    width: 100%
+    transition: .2s
+    margin-top: 50px
+    padding: 10px
+    border: 1px rgba(#4e1a68, 0) dotted
+    box-sizing: border-box
+    background-color: rgba(#fff, 0)
+    @media screen and (max-width: 768px)
+      flex-direction: column
       background-color: rgba(#fff, .9)
       box-shadow: 0 0 10px rgba(desaturate(#4e1a68, 50), .7)
-    a.item:hover
-      // background-color: #fff
-      // border: 1px #4e1a68 dotted
-      // padding: 10px
+    .thumb
+      width: 470px
+      height: auto
+      align-self: flex-start
+      box-shadow: 0 0 8px gray
+      @media screen and (max-width: 768px)
+        width: 100%
+        margin: 0 auto 20px
+    .thumb-youtube
+      height: calc(470px / 560 * 315)
+      @media screen and (max-width: 768px)
+        width: calc(100% / 560 * 315)
+    .desc
+      width: 470px
+      @media screen and (max-width: 768px)
+        width: auto
+      text-align: left
+      .genre
+        padding: 4px 5px
+        // margin-top: 10px
+        margin-left: 10px
+        // margin-bottom: 1.5em
+        font-size: .7em
+        border-radius: 5px
+        font-weight: bold
+        color: #fff
+      .genre-web
+        background-color: #0C4842
+      .genre-proposal
+        background-color: #9F353A
+      .genre-movie
+        background-color: #08192D
+      .genre-music
+        background-color: #4A225D
+      .genre-art
+        background-color: #946243
+      .genre-graphic
+        background-color: #35269d
+      .workgrid
+        margin-top: 15px
+        display: grid
+        grid-template-columns: auto 1fr
+        .h
+          margin-right: 10px
+          text-align: right
+          &::after
+            content: '：'
+      .summary
+        margin-top: 20px
+  .item:hover
+    background-color: rgba(#fff, .9)
+    box-shadow: 0 0 10px rgba(desaturate(#4e1a68, 50), .7)
+  a.item:hover
+    box-shadow: 0 0 30px rgba(#4e1a68, .7)
+  @media screen and (max-width: 768px)
+    a.item
       box-shadow: 0 0 30px rgba(#4e1a68, .7)
-      // background: radial-gradient(#fff, rgba(#fff, .8))
 </style>

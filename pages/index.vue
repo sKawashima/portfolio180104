@@ -80,4 +80,8 @@ html
 
 .links
   padding-top: 15px
+
+@media screen and (max-width: 768px)
+  .container
+    min-width: auto
 </style>

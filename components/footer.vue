@@ -14,6 +14,8 @@ export default {
 footer
   width: 100%
   min-width: 1000px
+  @media screen and (max-width: 768px)
+    min-width: auto
   height: 150px
   background-color: #4e1a68
   background: linear-gradient(desaturate(#4e1a68 , 20%), #4e1a68)
