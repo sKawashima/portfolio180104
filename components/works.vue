@@ -387,9 +387,7 @@ a
       text-align: left
       .genre
         padding: 4px 5px
-        // margin-top: 10px
         margin-left: 10px
-        // margin-bottom: 1.5em
         font-size: .7em
         border-radius: 5px
         font-weight: bold
