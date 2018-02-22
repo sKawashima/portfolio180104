@@ -1,6 +1,5 @@
 # portfolio180104
 [![npm](https://img.shields.io/npm/v/npm.svg)]()
-
 [![wercker status](https://app.wercker.com/status/2b12b8e72f154c24f52781e9ff2a6fa2/s/master "wercker status")](https://app.wercker.com/project/byKey/2b12b8e72f154c24f52781e9ff2a6fa2)
 [![Maintainability](https://api.codeclimate.com/v1/badges/62db1485411d6ecdf224/maintainability)](https://codeclimate.com/github/sKawashima/portfolio180104/maintainability)
 
