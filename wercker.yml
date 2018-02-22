@@ -34,7 +34,4 @@ build:
         code: |
           echo "node version $(node -v) running"
           echo "npm version $(npm -v) running"
-    - script:
-        name: test generate
-        code: |
-          echo "npm run generate"
+    - npm-run-generate
