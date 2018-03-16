@@ -37,6 +37,5 @@ build:
     - script:
         name: test generate
         code: |
-          echo "npm run dev"
-          echo "npm run build"
-          echo "npm run generate"
+          npm install
+          npm run generate
