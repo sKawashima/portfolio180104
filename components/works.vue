@@ -4,7 +4,7 @@ section#works-list
     .line
   .items
     .item#w0
-      img.thumb(src="~/static/personality.png")
+      img.thumb(src="~/assets/personality.png")
       .desc
         h1 Personality
           span.genre.genre-art Art
@@ -26,7 +26,7 @@ section#works-list
         p.summary 同じ髪型と同じ服装で人を選ぶ社会に対する主張を持ったメディアアート。
   .items
     .item
-      img.thumb(src="~/static/mahounoyuenchi.png")
+      img.thumb(src="~/assets/mahounoyuenchi.png")
       .desc
         h1 「まほうのゆうえんち」ポスター
           span.genre.genre-graphic Graphic
@@ -45,7 +45,7 @@ section#works-list
           p.main Photoshop
         p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
     a.item(href="https://skawashima.com/temp/baloon.html" target="_blank")
-      img.thumb(src="~/static/baloon.png")
+      img.thumb(src="~/assets/baloon.png")
       .desc
         h1 「ふうせんの森」特設ページ
           span.genre.genre-web Web
@@ -66,7 +66,7 @@ section#works-list
         p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
         p.summary 企画展のテーマである「風船に重りを吊るしてちょうど良く浮かばせる」を、ページ内のインタラクティブなコンテンツとして再現。
     a.item(href="https://photos.app.goo.gl/PtQuQ569RDGNlrz92" target="_blank")
-      img.thumb(src="~/static/aokuototo.jpg")
+      img.thumb(src="~/assets/aokuototo.jpg")
       .desc
         h1 個人展覧会「青ク音ト」
           span.genre.genre-music Music
@@ -149,7 +149,7 @@ section#works-list
           p.main Ableton Live
         p.summary 映像はCHARLII_k氏に依頼。
     .item
-      img.thumb(src="~/static/hmp.png")
+      img.thumb(src="~/assets/hmp.png")
       .desc
         h1 はこだてみらいプロジェクト
           span.genre.genre-web Web
@@ -169,7 +169,7 @@ section#works-list
         p.summary 運営コンソーシアムより依頼され制作。
         p.summary 公開から1年と3ヶ月の間、運営・保守を担当。
     a.item(href="http://hakodate-miraiproject.jp/pre-comming/" target="_blank")
-      img.thumb(src="~/static/hmp-pre.png")
+      img.thumb(src="~/assets/hmp-pre.png")
       .desc
         h1 はこだてみらいプロジェクト プレサイト
           span.genre.genre-web Web
@@ -188,7 +188,7 @@ section#works-list
           p.main Illustrator / HTML,Sass / PHP
         p.summary 函館駅前に新たに設置される「はこだてみらい館」と「はこだてキッズプラザ」の告知のため、運営コンソーシアムより依頼され制作。
     a.item(href="http://funifd.com/exhibition/ucd2015/" target="_blank")
-      img.thumb(src="~/static/mirainohakobasu.png")
+      img.thumb(src="~/assets/mirainohakobasu.png")
       .desc
         h1 ミライノハコバス
           span.genre.genre-web Web
@@ -211,7 +211,7 @@ section#works-list
         p.summary この展示会は、歴代の展覧会において過去最多来場者数を記録。
         p.summary リーダーとして、タスク管理やマネジメント等を初挑戦した。
     a.item(href="http://soracamera.com/" target="_blank")
-      img.thumb(src="~/static/soracamera.png")
+      img.thumb(src="~/assets/soracamera.png")
       .desc
         h1 ハコダテソラカメラプロジェクト
           span.genre.genre-web Web
@@ -249,7 +249,7 @@ section#works-list
           p.main AviUtl
         p.summary イベントで起きたことをその日の終わりに見て振り返るために当日中に制作。
     a.item(href="http://skawashima.github.io/skawashima.com/funtousic/" target="_blank")
-      img.thumb(src="~/static/funtousic.png")
+      img.thumb(src="~/assets/funtousic.png")
       .desc
         h1 funtousic
           span.genre.genre-proposal 提案
@@ -274,7 +274,7 @@ section#works-list
           | また、音を触るイメージを持ってもらうための映像と、その映像に使うための楽曲を制作。
         p.summary この提案は、授業成果発表会「はこだて未来展2015」において最優秀賞を受賞。
     .item
-      img.thumb(src="~/static/goryokaku.jpg")
+      img.thumb(src="~/assets/goryokaku.jpg")
       .desc
         h1 ポスター「もっとすごくなるはずだった五稜郭」
           span.genre.genre-graphic Graphic
@@ -306,7 +306,7 @@ export default {
   // },
   // methods: {
   //   getWorks () {
-  //     return axios.get('~/static/works.json')
+  //     return axios.get('~/assets/works.json')
   //       .then((res) => {
   //         this.set(this, this.works, res.data)
   //       })
