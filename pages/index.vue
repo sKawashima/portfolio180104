@@ -37,7 +37,7 @@ export default {
 <style lang="sass">
 html
   background-color: #4e1a68
-  font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI","Noto Sans Japanese","ヒラギノ角ゴ ProN W3", Meiryo, sans-serif
 
 @font-face
   font-family: TextaAlt-Thin
