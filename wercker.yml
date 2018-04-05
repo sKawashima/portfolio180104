@@ -37,5 +37,6 @@ build:
     - script:
         name: test generate
         code: |
-          npm install
+          npm install -g yarn
+          yarn
           npm run generate
