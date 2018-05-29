@@ -2,7 +2,7 @@
 footer
   p Art for Design, Design for Development.<br>
     | <br>
-    | ©2019 sKawashima
+    | ©2018 sKawashima
 </template>
 
 <script>
