@@ -43,4 +43,5 @@ build:
         name: test hexo
         code: |
           cd hexo
+          npm install
           npm run generate
