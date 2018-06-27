@@ -27,5 +27,8 @@
   },
   "scripts": {
     "dev": "hexo s"
+  },
+  "devDependencies": {
+    "barba.js": "^1.0.0"
   }
 }

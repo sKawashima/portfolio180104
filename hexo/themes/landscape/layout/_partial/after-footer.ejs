@@ -22,4 +22,10 @@
 <% } %>
 
 <%- js('js/script') %>
+<%- js('js/barba.min') %>
+<script type="text/javascript">
+  window.onload = () => {
+    Barba.Pjax.start();
+  }
+</script>
 <%- partial('gauges-analytics') %>
