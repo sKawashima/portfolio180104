@@ -26,7 +26,8 @@
     "hexo-uglify": "^0.0.5"
   },
   "scripts": {
-    "dev": "hexo s"
+    "dev": "hexo s",
+    "generate": "hexo g"
   },
   "devDependencies": {
     "barba.js": "^1.0.0"
