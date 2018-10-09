@@ -26,7 +26,7 @@
   margin: 0 12px 1em
 
 .article-header
-  padding: article-padding article-padding 0
+  padding: article-padding article-padding article-padding
   margin-top .5em
 
 .article-title
@@ -36,6 +36,7 @@
   color: color-default
   line-height: line-height-title
   transition: color 0.2s
+  // margin-bottom: (line-height-title / 2)
   a&:hover
     color: color-link
 
@@ -46,14 +47,15 @@
   padding: 0 article-padding
   p, table
     line-height: line-height
-    font-feature-settings : "palt"
+    margin: 0 0 line-height
     text-align: justify
     font-weight: 300
-    margin: line-height 0
+    letter-spacing: 0.05em
   h1, h2, h3, h4, h5, h6
     font-weight: bold
     line-height: line-height-title
-    margin: line-height-title 0
+    margin: line-height-title 0 (line-height-title / 3)
+    font-feature-settings : "palt"
   a
     color: color-link
     text-decoration: none

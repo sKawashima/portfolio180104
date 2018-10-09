@@ -1,10 +1,10 @@
 <%- partial('_partial/head') %>
-<body>
-  <div id="container">
+<body id="barba-wrapper">
+  <div id="container" class="barba-container">
     <div id="wrap">
       <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
       <div class="outer">
-        <section id="main"><%- body %></section>
+        <section id="main" ><%- body %></section>
         <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
           <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
         <% } %>

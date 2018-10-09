@@ -39,3 +39,9 @@ build:
         code: |
           npm install
           npm run generate
+    - script:
+        name: test hexo
+        code: |
+          cd hexo
+          npm install
+          npm run generate
