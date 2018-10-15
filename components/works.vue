@@ -248,7 +248,7 @@ section#works-list
           p.h 使用技術
           p.main AviUtl
         p.summary イベントで起きたことをその日の終わりに見て振り返るために当日中に制作。
-    a.item(href="http://skawashima.github.io/skawashima.com/funtousic/" target="_blank")
+    a.item(href="http://skawashima.com/temp/funtousic/" target="_blank")
       img.thumb(src="~/assets/funtousic.png")
       .desc
         h1 funtousic
