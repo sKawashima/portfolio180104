@@ -62,8 +62,8 @@
     &:hover
       text-decoration: underline
   ul, ol, dl
-    margin-top: line-height
-    margin-bottom: line-height
+    margin-top: line-height * .9
+    margin-bottom: line-height * .9
   img, video
     max-width: 100%
     width auto
@@ -85,10 +85,19 @@
     border-bottom: 1px solid color-border
     padding: 10px 0
   blockquote
-    font-family: font-serif
-    font-size: 1.4em
+    font-family: YuMincho, 'Yu Mincho', font-serif
+    // font-size: 1.4em
     margin: line-height 20px
-    text-align: center
+    background-color: #eee
+    padding: 0 .5em
+    font-style: oblique
+    p, li
+      margin: 0
+      padding: 0 0 0.5em + (line-height/2)
+    ol, ul
+      margin: 0
+      margin-left 20px
+      padding-top: line-height
     footer
       font-size: font-size
       margin: line-height 0
