@@ -44,7 +44,7 @@ section#works-list
           p.h 使用技術
           p.main Photoshop
         p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
-    a.item(href="https://skawashima.com/temp/baloon.html" target="_blank")
+    a.item(href="http://hakodate-miraiproject.jp/wp_test/baloon/" target="_blank")
       img.thumb(src="~/assets/baloon.png")
       .desc
         h1 「ふうせんの森」特設ページ
