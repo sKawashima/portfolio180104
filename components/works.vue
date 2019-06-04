@@ -30,7 +30,7 @@ section#works-list
     a.item(href="https://trinity-trio.github.io/web/" target="_blank")
       img.thumb(src="~/assets/trinity-trio.png")
       .desc
-        h1 Trinity Trio Webサイト
+        h1 Trinity Trio
           span.genre.genre-web Web
           span.genre.genre-art Art
         .workgrid
@@ -39,7 +39,7 @@ section#works-list
           p.h 活動人数
           p.main 3人
           p.h 担当
-          p.main フロントエンド開発 / 環境構築
+          p.main Webサイト開発全般 / 作曲 / マネジメント / 広報 / ディレクション他
           p.h 制作期間
           p.main 1day
           p.h 制作時期
@@ -51,7 +51,7 @@ section#works-list
     a.item(href="http://hakolab.co.jp/" target="_blank")
       img.thumb(src="~/assets/hakolab.png")
       .desc
-        h1 株式会社函館ラボラトリ Webサイト
+        h1 株式会社函館ラボラトリ
           span.genre.genre-web Web
         .workgrid
           p.h 活動
@@ -59,7 +59,7 @@ section#works-list
           p.h 活動人数
           p.main 1人
           p.h 担当
-          p.main 開発 / 環境構築
+          p.main Webサイト開発全般
           p.h 制作期間
           p.main 4day
           p.h 制作時期
@@ -70,16 +70,15 @@ section#works-list
     a.item(href="https://miraibase.jp/" target="_blank")
       img.thumb(src="~/assets/web-miraibase.png")
       .desc
-        h1 MIRAI BASE Webサイト
+        h1 MIRAI BASE
           span.genre.genre-web Web
-          span.genre.genre-art Art
         .workgrid
           p.h 活動
           p.main 課外活動
           p.h 活動人数
           p.main 2人
           p.h 担当
-          p.main フロントエンド開発 / API開発 / 環境構築
+          p.main Webサイト開発全般 / 環境構築
           p.h 制作期間
           p.main 6month
           p.h 制作時期
