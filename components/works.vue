@@ -4,6 +4,90 @@ section#works-list
     .line
   .items
     .item#w0
+      iframe.thumb.thumb-youtube(src="https://www.youtube.com/embed/2zG1shL9Hxc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen)
+      .desc
+        h1 Pinky
+          span.genre.genre-music 提案
+          span.genre.genre-movie Movie
+          span.genre.genre-music Music
+        .workgrid
+          p.h 活動
+          p.main ハッカソン成果
+          p.h 活動人数
+          p.main 5人(Team !kie)
+          p.h 担当
+          p.main コンセプト立案(UX) / アプリUI / 映像制作 / 作曲
+          p.h 制作期間
+          p.main 2day
+          p.h 制作時期
+          p.main 2018年10月
+          p.h 使用技術
+          p.main Sketch / 映像制作 / Ableton Live
+        p.summary ハッカソン「JP HACKS2018」にて発表した成果。
+        p.summary 「約束を管理するアプリ」の提案。さらに、「ハッカソン映え」のために物理デバイスを提案した。当時のブログ記事は
+          a(href='http://skawashima.com/blog/2018/10/29/%E4%BA%8C%E5%BA%A6%E7%9B%AE%E3%81%AE%E3%83%8F%E3%83%83%E3%82%AB%E3%82%BD%E3%83%B3%E3%81%A7%E6%84%9F%E3%81%98%E3%81%9F%E3%81%93%E3%81%A8/' target='_blank') [こちら]
+          | 。
+    a.item(href="https://trinity-trio.github.io/web/" target="_blank")
+      img.thumb(src="~/assets/trinity-trio.png")
+      .desc
+        h1 Trinity Trio Webサイト
+          span.genre.genre-web Web
+          span.genre.genre-art Art
+        .workgrid
+          p.h 活動
+          p.main アーティスト活動
+          p.h 活動人数
+          p.main 3人
+          p.h 担当
+          p.main フロントエンド開発 / 環境構築
+          p.h 制作期間
+          p.main 1day
+          p.h 制作時期
+          p.main 2018年9月~
+          p.h 使用技術
+          p.main Nuxt / Vue / Pug / Sass / JavaScript
+        p.summary 函館で楽曲制作や空間表現などのアート活動を行っている/行っていた、自身が所属するアーティスト集団のWebサイト。
+        p.summary 現在開発進行中。
+    a.item(href="http://hakolab.co.jp/" target="_blank")
+      img.thumb(src="~/assets/hakolab.png")
+      .desc
+        h1 株式会社函館ラボラトリ Webサイト
+          span.genre.genre-web Web
+        .workgrid
+          p.h 活動
+          p.main 受注製作
+          p.h 活動人数
+          p.main 1人
+          p.h 担当
+          p.main 開発 / 環境構築
+          p.h 制作期間
+          p.main 4day
+          p.h 制作時期
+          p.main 2018年2月
+          p.h 使用技術
+          p.main Parcel / Pug / Sass / JavaScript
+        p.summary 超短期間での受注制作。デザイン・開発を全て行った。アニメーションは提案要素。
+    a.item(href="https://miraibase.jp/" target="_blank")
+      img.thumb(src="~/assets/web-miraibase.png")
+      .desc
+        h1 MIRAI BASE Webサイト
+          span.genre.genre-web Web
+          span.genre.genre-art Art
+        .workgrid
+          p.h 活動
+          p.main 課外活動
+          p.h 活動人数
+          p.main 2人
+          p.h 担当
+          p.main フロントエンド開発 / API開発 / 環境構築
+          p.h 制作期間
+          p.main 6month
+          p.h 制作時期
+          p.main 2018年1月~
+          p.h 使用技術
+          p.main Parcel / Pug / Sass / JavaScript
+        p.summary 函館で運営に関わったコワーキングスペースのWebサイト。
+    .item
       img.thumb(src="~/assets/personality.png")
       .desc
         h1 Personality
@@ -15,16 +99,15 @@ section#works-list
           p.h 活動人数
           p.main 1人
           p.h 担当
-          p.main 考案・デザイン・開発
+          p.main 考案 / デザイン / 開発
           p.h 制作期間
           p.main 1week
           p.h 制作時期
           p.main 2018年1月
           p.h 使用技術
-          p.main Nuxt / Vue / pug / Sass / Javascript
+          p.main Nuxt / Vue / Pug / Sass / JavaScript
         p.summary 髪型が隠れた人の写真を重ねれば、個性のない顔が生まれるんじゃないか。
         p.summary 同じ髪型と同じ服装で人を選ぶ社会に対する主張を持ったメディアアート。
-  .items
     .item
       img.thumb(src="~/assets/mahounoyuenchi.png")
       .desc
@@ -44,7 +127,7 @@ section#works-list
           p.h 使用技術
           p.main Photoshop
         p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
-    a.item(href="https://skawashima.com/temp/baloon.html" target="_blank")
+    a.item(href="http://hakodate-miraiproject.jp/wp_test/baloon/" target="_blank")
       img.thumb(src="~/assets/baloon.png")
       .desc
         h1 「ふうせんの森」特設ページ
@@ -62,7 +145,7 @@ section#works-list
           p.h 制作時期
           p.main 2017年11月
           p.h 使用技術
-          p.main XD / pug,Sass / TypeScript / CANVAS / WordPress
+          p.main XD / Pug,Sass / TypeScript / CANVAS / WordPress
         p.summary はこだてみらい館運営コンソーシアムより依頼を受けて制作。
         p.summary 企画展のテーマである「風船に重りを吊るしてちょうど良く浮かばせる」を、ページ内のインタラクティブなコンテンツとして再現。
     a.item(href="https://photos.app.goo.gl/PtQuQ569RDGNlrz92" target="_blank")
