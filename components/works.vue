@@ -16,7 +16,7 @@ section#works-list
           p.h 活動人数
           p.main 5人(Team !kie)
           p.h 担当
-          p.main コンセプト立案(UX) / アプリUI / 映像制作 / 作曲
+          p.main コンセプト立案 / UX,UIデザイン / 映像制作 / 作曲
           p.h 制作期間
           p.main 2day
           p.h 制作時期
@@ -39,7 +39,7 @@ section#works-list
           p.h 活動人数
           p.main 3人
           p.h 担当
-          p.main Webサイト開発全般 / 作曲 / マネジメント / 広報 / ディレクション他
+          p.main 開発全般 / マネジメント
           p.h 制作期間
           p.main 1day
           p.h 制作時期
@@ -59,7 +59,7 @@ section#works-list
           p.h 活動人数
           p.main 1人
           p.h 担当
-          p.main Webサイト開発全般
+          p.main デザイン / 開発全般
           p.h 制作期間
           p.main 4day
           p.h 制作時期
@@ -78,7 +78,7 @@ section#works-list
           p.h 活動人数
           p.main 2人
           p.h 担当
-          p.main Webサイト開発全般 / 環境構築
+          p.main デザイン / 開発全般 / 環境構築
           p.h 制作期間
           p.main 6month
           p.h 制作時期
