@@ -15,7 +15,7 @@
   "dependencies": {
     "axios": "^0.21.2",
     "node-sass": "^5.0.0",
-    "nuxt": "^2.15.8",
+    "nuxt": "^3.2.0",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "sass-loader": "^10.1.1"
