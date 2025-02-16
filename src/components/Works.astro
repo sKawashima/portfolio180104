@@ -1,9 +1,9 @@
 ---
-import { getCollection } from 'astro:content';
-import WorkItem from './WorkItem.astro';
+import { getCollection } from 'astro:content'
+import WorkItem from './WorkItem.astro'
 
-const works = await getCollection('works');
-const sortedWorks = works.sort((a, b) => b.data.sortDate - a.data.sortDate);
+const works = await getCollection('works')
+const sortedWorks = works.sort((a, b) => b.data.sortDate - a.data.sortDate)
 ---
 
 <section id="works-list">

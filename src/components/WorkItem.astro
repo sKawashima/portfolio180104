@@ -1,15 +1,27 @@
 ---
-import type { CollectionEntry } from 'astro:content';
+import type { CollectionEntry } from 'astro:content'
 
 interface Props {
-  work: CollectionEntry<'works'>;
+  work: CollectionEntry<'works'>
 }
 
-const { work } = Astro.props;
-const { title, genres, activity, memberCount, role, period, date, technologies, thumbnail, youtubeId, link } = work.data;
-const { Content } = await work.render();
+const { work } = Astro.props
+const {
+  title,
+  genres,
+  activity,
+  memberCount,
+  role,
+  period,
+  date,
+  technologies,
+  thumbnail,
+  youtubeId,
+  link,
+} = work.data
+const { Content } = await work.render()
 
-const Wrapper = link ? 'a' : 'div';
+const Wrapper = link ? 'a' : 'div'
 ---
 
 <Wrapper class="item" href={link} target={link ? "_blank" : undefined}>
