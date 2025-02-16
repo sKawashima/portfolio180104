@@ -9,10 +9,10 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [22.x]
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v4
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -20,6 +20,6 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm install
-        npm run generate
+        npm run build
       env:
         CI: true
