@@ -50,109 +50,97 @@ const Wrapper = link ? 'a' : 'div';
   </div>
 </Wrapper>
 
-<style>
-  .item {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
-    height: auto;
-    width: 100%;
-    transition: 0.2s;
-    margin-top: 50px;
-    padding: 16px;
-    border: 1px rgba(78, 26, 104, 0) dotted;
-    box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0);
-  }
+<style lang="sass">
+  .item
+    display: flex
+    gap: 40px
+    justify-content: space-between
+    height: auto
+    width: 100%
+    transition: 0.2s
+    margin-top: 50px
+    padding: 16px
+    border: 1px rgba(78, 26, 104, 0) dotted
+    box-sizing: border-box
+    background-color: rgba(255, 255, 255, 0)
 
-  .thumb {
-    width: 450px;
-    height: auto;
-    align-self: flex-start;
-    box-shadow: 0 0 8px gray;
-  }
+    &:hover
+      background-color: rgba(255, 255, 255, 0.9)
+      box-shadow: 0 0 10px rgba(78, 26, 104, 0.5)
 
-  .thumb-youtube {
-    height: calc(470px / 560 * 315);
-  }
+    @media screen and (max-width: 768px)
+      flex-direction: column
+      background-color: rgba(255, 255, 255, 0.9)
+      box-shadow: 0 0 10px rgba(78, 26, 104, 0.5)
 
-  .desc {
-    width: 450px;
-    text-align: left;
-    padding: 0 10px;
-  }
+  a
+    text-decoration: none
+    color: inherit
 
-  .genre {
-    padding: 4px 5px;
-    margin-left: 10px;
-    font-size: 0.7em;
-    border-radius: 5px;
-    font-weight: bold;
-    color: #fff;
-  }
+    &.item:hover
+      box-shadow: 0 0 30px rgba(78, 26, 104, 0.7)
 
-  .genre-web { background-color: #0C4842; }
-  .genre-proposal { background-color: #9F353A; }
-  .genre-movie { background-color: #08192D; }
-  .genre-music { background-color: #4A225D; }
-  .genre-art { background-color: #946243; }
-  .genre-graphic { background-color: #35269d; }
+    &.item
+      @media screen and (max-width: 768px)
+        box-shadow: 0 0 30px rgba(78, 26, 104, 0.7)
 
-  .workgrid {
-    margin-top: 15px;
-    display: grid;
-    grid-template-columns: auto 1fr;
-  }
+  .thumb
+    width: 450px
+    height: auto
+    align-self: flex-start
+    box-shadow: 0 0 8px gray
 
-  .h {
-    margin-right: 10px;
-    text-align: right;
-  }
+    &-youtube
+      height: calc(470px / 560 * 315)
 
-  .h::after {
-    content: '：';
-  }
+      @media screen and (max-width: 768px)
+        width: calc(100% / 560 * 315)
 
-  .summary {
-    margin-top: 20px;
-  }
+    @media screen and (max-width: 768px)
+      width: 100%
+      margin: 0 auto 20px
 
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
+  .desc
+    width: 450px
+    text-align: left
+    padding: 0 10px
 
-  .item:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 0 10px rgba(78, 26, 104, 0.5);
-  }
+    @media screen and (max-width: 768px)
+      width: auto
 
-  a.item:hover {
-    box-shadow: 0 0 30px rgba(78, 26, 104, 0.7);
-  }
+  .genre
+    padding: 4px 8px
+    margin-left: 10px
+    font-size: 0.6em
+    border-radius: 4px
+    font-weight: bold
+    color: #fff
 
-  @media screen and (max-width: 768px) {
-    .item {
-      flex-direction: column;
-      background-color: rgba(255, 255, 255, 0.9);
-      box-shadow: 0 0 10px rgba(78, 26, 104, 0.5);
-    }
+    &-web
+      background-color: #0C4842
+    &-proposal
+      background-color: #9F353A
+    &-movie
+      background-color: #08192D
+    &-music
+      background-color: #4A225D
+    &-art
+      background-color: #946243
+    &-graphic
+      background-color: #35269d
 
-    .thumb {
-      width: 100%;
-      margin: 0 auto 20px;
-    }
+  .workgrid
+    margin-top: 15px
+    display: grid
+    grid-template-columns: auto 1fr
 
-    .thumb-youtube {
-      width: calc(100% / 560 * 315);
-    }
+  .h
+    margin-right: 10px
+    text-align: right
 
-    .desc {
-      width: auto;
-    }
+    &::after
+      content: '：'
 
-    a.item {
-      box-shadow: 0 0 30px rgba(78, 26, 104, 0.7);
-    }
-  }
+  .summary
+    margin-top: 20px
 </style>

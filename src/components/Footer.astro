@@ -6,28 +6,23 @@
   </p>
 </footer>
 
-<style>
-  footer {
-    width: 100%;
-    min-width: 1000px;
-    height: 150px;
-    background-color: #4e1a68;
-    background: linear-gradient(#5c2c74, #4e1a68);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-  }
+<style lang="sass">
+  footer
+    width: 100%
+    min-width: 1000px
+    height: 150px
+    background-color: #4e1a68
+    background: linear-gradient(#5c2c74, #4e1a68)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: column
 
-  p {
-    color: #fff;
-    font-family: Texta-Heavy;
-    font-size: 1.2em;
-  }
+    @media screen and (max-width: 768px)
+      min-width: auto
 
-  @media screen and (max-width: 768px) {
-    footer {
-      min-width: auto;
-    }
-  }
+  p
+    color: #fff
+    font-family: Texta-Heavy
+    font-size: 1.2em
 </style>

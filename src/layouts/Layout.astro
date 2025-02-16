@@ -23,53 +23,42 @@ const { title } = Astro.props;
   </body>
 </html>
 
-<style is:global>
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+<style is:global lang="sass">
+  *
+    margin: 0
+    padding: 0
+    box-sizing: border-box
 
-  html {
-    background-color: #4e1a68;
-    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI",
-      "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
-  }
+  html
+    background-color: #4e1a68
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", "Noto Sans Japanese", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif
 
-  body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  body
+    min-height: 100vh
+    display: flex
+    flex-direction: column
+    align-items: center
 
-  main {
-    min-width: 1000px;
-    width: 100%;
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  main
+    min-width: 1000px
+    width: 100%
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
 
-  @media screen and (max-width: 768px) {
-    main {
-      min-width: auto;
-    }
-  }
+    @media screen and (max-width: 768px)
+      min-width: auto
 
-  @font-face {
-    font-family: TextaAlt-Thin;
-    src: url(/TextaAlt-Thin-webfont.woff);
-  }
+  @font-face
+    font-family: TextaAlt-Thin
+    src: url(/TextaAlt-Thin-webfont.woff)
 
-  @font-face {
-    font-family: Texta-Thin;
-    src: url(/Texta-Thin-webfont.woff);
-  }
+  @font-face
+    font-family: Texta-Thin
+    src: url(/Texta-Thin-webfont.woff)
 
-  @font-face {
-    font-family: Texta-Heavy;
-    src: url(/Texta-Heavy-webfont.woff);
-  }
+  @font-face
+    font-family: Texta-Heavy
+    src: url(/Texta-Heavy-webfont.woff)
 </style>
