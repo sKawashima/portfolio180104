@@ -1,0 +1,6 @@
+pre-commit:
+  parallel: true
+  commands:
+    build:
+      run: npx biome check --write --unsafe --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git add {staged_files}
+      skip_empty: false

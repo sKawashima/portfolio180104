@@ -1,34 +1,21 @@
 {
   "name": "portfolio180104",
+  "type": "module",
   "version": "1.0.0",
-  "description": "portfolio with nuxt",
-  "author": "Shota Kawashima <bysk.333@gmail.com>",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "format": "biome check --write --unsafe --no-errors-on-unmatched --files-ignore-unknown=true src/"
   },
   "dependencies": {
-    "axios": "^0.21.2",
-    "node-sass": "^5.0.0",
-    "nuxt": "^2.15.8",
-    "pug": "^3.0.2",
-    "pug-plain-loader": "^1.1.0",
-    "sass-loader": "^10.1.1"
+    "astro": "^5.3.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.24.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-loader": "^4.0.2",
-    "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "eslint-plugin-standard": "^5.0.0"
+    "@biomejs/biome": "^1.9.4",
+    "@evilmartians/lefthook": "^1.10.10",
+    "sass-embedded": "^1.85.0"
   }
 }

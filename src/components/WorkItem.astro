@@ -1,0 +1,158 @@
+---
+import type { CollectionEntry } from 'astro:content'
+
+interface Props {
+  work: CollectionEntry<'works'>
+}
+
+const { work } = Astro.props
+const {
+  title,
+  genres,
+  activity,
+  memberCount,
+  role,
+  period,
+  date,
+  technologies,
+  thumbnail,
+  youtubeId,
+  link,
+} = work.data
+const { Content } = await work.render()
+
+const Wrapper = link ? 'a' : 'div'
+---
+
+<Wrapper class="item" href={link} target={link ? "_blank" : undefined}>
+  {youtubeId ? (
+    <iframe
+      class="thumb thumb-youtube"
+      src={`https://www.youtube.com/embed/${youtubeId}?rel=0`}
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+    ></iframe>
+  ) : thumbnail ? (
+    <img class="thumb" src={thumbnail} alt={title} />
+  ) : null}
+  <div class="desc">
+    <h1>
+      {title}
+      {genres.map((genre) => (
+        <span class={`genre genre-${genre.type}`}>{genre.name}</span>
+      ))}
+    </h1>
+    <div class="workgrid">
+      <p class="h">活動</p>
+      <p class="main">{activity}</p>
+      <p class="h">活動人数</p>
+      <p class="main">{memberCount}</p>
+      <p class="h">担当</p>
+      <p class="main">{role}</p>
+      <p class="h">制作期間</p>
+      <p class="main">{period}</p>
+      <p class="h">制作時期</p>
+      <p class="main">{date}</p>
+      <p class="h">使用技術</p>
+      <p class="main">{technologies}</p>
+    </div>
+    <div class="summary">
+      <Content />
+    </div>
+  </div>
+</Wrapper>
+
+<style lang="sass">
+  .item
+    display: flex
+    gap: 40px
+    justify-content: space-between
+    height: auto
+    width: 100%
+    transition: 0.2s
+    margin-top: 50px
+    padding: 16px
+    border: 1px rgba(78, 26, 104, 0) dotted
+    box-sizing: border-box
+    background-color: rgba(255, 255, 255, 0)
+
+    &:hover
+      background-color: rgba(255, 255, 255, 0.9)
+      box-shadow: 0 0 10px rgba(78, 26, 104, 0.5)
+
+    @media screen and (max-width: 768px)
+      flex-direction: column
+      background-color: rgba(255, 255, 255, 0.9)
+      box-shadow: 0 0 10px rgba(78, 26, 104, 0.5)
+
+  a
+    text-decoration: none
+    color: inherit
+
+    &.item:hover
+      box-shadow: 0 0 30px rgba(78, 26, 104, 0.7)
+
+    &.item
+      @media screen and (max-width: 768px)
+        box-shadow: 0 0 30px rgba(78, 26, 104, 0.7)
+
+  .thumb
+    width: 450px
+    height: auto
+    align-self: flex-start
+    box-shadow: 0 0 8px gray
+
+    &-youtube
+      height: calc(470px / 560 * 315)
+
+      @media screen and (max-width: 768px)
+        width: calc(100% / 560 * 315)
+
+    @media screen and (max-width: 768px)
+      width: 100%
+      margin: 0 auto 20px
+
+  .desc
+    width: 450px
+    text-align: left
+    padding: 0 10px
+
+    @media screen and (max-width: 768px)
+      width: auto
+
+  .genre
+    padding: 4px 8px
+    margin-left: 10px
+    font-size: 0.6em
+    border-radius: 4px
+    font-weight: bold
+    color: #fff
+
+    &-web
+      background-color: #0C4842
+    &-proposal
+      background-color: #9F353A
+    &-movie
+      background-color: #08192D
+    &-music
+      background-color: #4A225D
+    &-art
+      background-color: #946243
+    &-graphic
+      background-color: #35269d
+
+  .workgrid
+    margin-top: 15px
+    display: grid
+    grid-template-columns: auto 1fr
+
+  .h
+    margin-right: 10px
+    text-align: right
+
+    &::after
+      content: '：'
+
+  .summary
+    margin-top: 20px
+</style>

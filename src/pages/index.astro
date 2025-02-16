@@ -1,0 +1,28 @@
+---
+import Footer from '../components/Footer.astro'
+import Gradation from '../components/Gradation.astro'
+import Nav from '../components/Nav.astro'
+import Topview from '../components/Topview.astro'
+import Works from '../components/Works.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout title="sKawashima Portfolio">
+  <Topview />
+  <Gradation />
+  <Nav />
+  <h1 id="works" class="title">Works</h1>
+  <Works />
+  <Footer />
+</Layout>
+
+<style lang="sass">
+  .title
+    font-family: Texta-Thin
+    display: block
+    font-size: 3.33em
+    color: #6b3b82
+    letter-spacing: 1px
+    margin-top: 25px
+    text-align: center
+</style>
