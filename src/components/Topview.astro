@@ -1,0 +1,60 @@
+---
+import SK from './SK.astro';
+---
+
+<section id="topview">
+  <div class="space"></div>
+  <SK class="logo" />
+  <h1>s<span class="b">K</span>awashima's<br>Portfolio</h1>
+  <div class="space"></div>
+</section>
+
+<style>
+  #topview {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    min-height: 500px;
+    background-color: #4e1a68;
+    background: linear-gradient(#4e1a68, #8f4eb4);
+    z-index: 5;
+  }
+
+  :global(.logo) {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    display: block;
+  }
+
+  h1 {
+    font-size: 3.33em;
+    color: #fff;
+    font-family: TextaAlt-Thin;
+    line-height: 1.2em;
+  }
+
+  .b {
+    font-family: Texta-Heavy;
+  }
+
+  @media screen and (max-width: 768px) {
+    #topview {
+      min-height: 70vw;
+      justify-content: center;
+    }
+
+    :global(.logo) {
+      width: 15%;
+      height: auto;
+    }
+
+    h1 {
+      margin-top: 0.5em;
+      font-size: 2em;
+    }
+  }
+</style>
