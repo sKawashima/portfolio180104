@@ -11,7 +11,7 @@
     "format": "biome check --write --unsafe --no-errors-on-unmatched --files-ignore-unknown=true src/"
   },
   "dependencies": {
-    "astro": "^5.7.1"
+    "astro": "^5.7.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
