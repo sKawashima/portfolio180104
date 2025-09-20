@@ -30,13 +30,13 @@ Web Audio APIを使いやすくするためのライブラリ。
 ## 対処法
 
 
-```js:.vueファイル内の読み込み
+```js
 if (process.browser) {
   var Tone = require('tone')
 }
 ```
 
-```js:vueファイル内の処理
+```js
 if (process.browser) {
   console.log(Tone.Frequency('A3').toMidi())
 }

@@ -63,7 +63,7 @@ for (var i = 0; i < overlaid.length; i++) {
 
 ```html
 <div id="container">
-  <img class="overlaid" v-for='(img, index) in overlaids' v-bind:src='img' v-bind:style="{opacity: 1 / (index + 1)}">
+  <img class="overlaid" v-for='(img, index) in overlaids' v-bind:src='img' v-bind:style="{opacity: 1 / (index + 1)}" alt="重ね合わせる画像">
 </div>
 ```
 

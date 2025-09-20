@@ -37,7 +37,7 @@ category: Development
 
 とりあえず必要なものを`yarn add`(`npm install`)します。
 
-```shell:terminal
+```shell
 yarn global add parcel-bundler
 yarn add hyperapp marked node-sass
 # これらは以下とほぼ同義です
@@ -57,7 +57,7 @@ yarn add hyperapp marked node-sass
 
 最低限のもののみ、HTML5で省略推奨されているタグは含めていません。
 
-```html:index.html
+```html
 <!DOCTYPE html>
 <title>markdown-editor with Hyperapp</title>
 <body>
@@ -68,7 +68,7 @@ yarn add hyperapp marked node-sass
 ここで、app.jsという空ファイルを作っちゃいます。
 その後、
 
-```shell:terminal
+```shell
 parcel index.html
 ```
 
@@ -79,7 +79,7 @@ Parcelのすごいところは、**とりあえずindex.htmlを引数にして�
 
 では、app.jsを編集します。
 
-```javascript:app.js
+```javascript
 import { h, app } from 'hyperapp'
 
 const state = {
@@ -117,7 +117,7 @@ Vue.jsだと、`v-model`とか便利なものがあるんですが、Hyperappに
 見つかりませんでしたので、生Javascriptで書いてます。誰か知ってたら教えてください。
 **先程書いたコードの一部を書き換えていくような形**で書いていきます。
 
-```javascript:app.js
+```javascript
 const view = (state, actions) => (
   <main id='app'>
     <textarea id='editor' oninput={e => actions.setOutput(document.getElementById('editor').value)} />
@@ -129,7 +129,7 @@ const view = (state, actions) => (
 `oninput`で入力を感知したら、`document.getElementById('editor').value`で得られた文字列(=textareaの内容)を引数に`actions.setOutput`を実行します。
 では、`actions.setOutput`を定義します。
 
-```javascript:app.js
+```javascript
 const actions = {
   setOutput: (input) => state => ({ output: input })
 }
@@ -146,7 +146,7 @@ const actions = {
 
 この変更はviewを編集するだけで秒解決です。ただ、Vue.jsで言うところの`v-html`のような機能も見当たらなかったので、直書きします。
 
-```javascript:app.js
+```javascript
 const view = (state, actions) => (
   <main id='app'>
     <textarea id='editor' oninput={e => actions.setOutput(document.getElementById('editor').value)}　/>
@@ -164,13 +164,13 @@ const view = (state, actions) => (
 
 まずmarkedのimport文の追加。
 
-```javascript:app.js
+```javascript
 import marked from 'marked'
 ```
 
 で、actionの編集。
 
-```javascript:app.js
+```javascript
 const actions = {
   setOutput: (input) => state => ({ output: marked(input) })
 }
@@ -186,7 +186,7 @@ marked超便利。marked超便利。marked超便利。
 
 style.sass
 
-```sass:style.sass
+```sass
 html, body
   height: 100%
   width: 100%
@@ -226,7 +226,7 @@ pre
 
 で、それをimportします。
 
-```javascript:app.js
+```javascript
 import './style.sass'
 ```
 
@@ -236,11 +236,11 @@ Highlight.jsはcodeタグ内の各種コードをいい感じの色にしてく�
 
 yarn add(npm install)
 
-```shell:terminal
+```shell
 yarn add highlight.js
 ```
 
-```javascript:app.js
+```javascript
 import highlight from 'highlight.js'
 import 'highlight.js/styles/atom-one-dark.css'
 
@@ -251,7 +251,7 @@ marked.setOptions({
 })
 ```
 
-```sass:style.sass
+```sass
 .hljs
   all: unset
 ```
@@ -264,7 +264,7 @@ marked.setOptions({
 
 あ、Parcelで静的データ書き出ししちゃいましょう。
 
-```shell:terminal
+```shell
 parcel build src/index.pug --public-url ./
 ```
 
