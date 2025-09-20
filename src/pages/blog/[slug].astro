@@ -1,0 +1,215 @@
+---
+import { getCollection } from 'astro:content'
+import Footer from '../../components/Footer.astro'
+import Gradation from '../../components/Gradation.astro'
+import Nav from '../../components/Nav.astro'
+import Layout from '../../layouts/Layout.astro'
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog')
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props
+const { Content } = await post.render()
+---
+
+<Layout title={`${post.data.title} | sKawashima Blog`}>
+  <Gradation />
+  <Nav />
+  <article class="blog-post">
+    <div class="container">
+      <header class="post-header">
+        <h1 class="post-title">{post.data.title}</h1>
+        <div class="meta">
+          <time>{post.data.date.toLocaleDateString('ja-JP')}</time>
+          {post.data.category && <span class="category">{post.data.category}</span>}
+        </div>
+        {post.data.tags && (
+          <div class="tags">
+            {post.data.tags.map((tag) => (
+              <span class="tag">#{tag}</span>
+            ))}
+          </div>
+        )}
+      </header>
+      
+      <div class="content">
+        <Content />
+      </div>
+      
+      <footer class="post-footer">
+        <a href="/blog/" class="back-link">← ブログ一覧に戻る</a>
+      </footer>
+    </div>
+  </article>
+  <Footer />
+</Layout>
+
+<style lang="sass">
+  .container
+    max-width: 900px
+    margin: 0 auto
+    padding: 2rem
+    
+    @media screen and (max-width: 768px)
+      padding: 1rem
+
+  .post-header
+    margin-bottom: 3rem
+    border-bottom: 1px solid #ddd
+    padding-bottom: 2rem
+
+  .post-title
+    font-size: 1.9em
+    font-weight: bold
+    color: #444
+    line-height: 1.2
+    margin-bottom: 1rem
+    
+    @media screen and (max-width: 768px)
+      font-size: 1.6em
+
+  .meta
+    display: flex
+    align-items: center
+    gap: 1rem
+    margin-bottom: 1rem
+    font-size: 0.85rem
+    color: #999
+    
+    time
+      font-weight: 300
+
+  .category
+    background: #eee
+    color: #777
+    padding: 0.2rem 0.5rem
+    border-radius: 3px
+    font-size: 0.8rem
+    text-shadow: 0 1px #fff
+
+  .tags
+    display: flex
+    flex-wrap: wrap
+    gap: 0.5rem
+
+  .tag
+    color: #872db4
+    font-size: 0.85rem
+    font-weight: 300
+    letter-spacing: 0.05em
+
+  // Hexoブログスタイルを継承した記事コンテンツ
+  .content
+    color: #444
+    font-size: 16px
+    line-height: 1.9em
+    
+    :global(p)
+      line-height: 1.9em
+      margin: 1.9em 0 0
+      text-align: justify
+      font-weight: 300
+      letter-spacing: 0.05em
+      
+    :global(h1), :global(h2), :global(h3), :global(h4), :global(h5), :global(h6)
+      font-weight: bold
+      line-height: 1.2em
+      margin: 1.2em 0 0.4em 0
+      color: #444
+      
+    :global(h2)
+      font-size: 1.5em
+      margin-top: 2em
+      
+    :global(h3)
+      font-size: 1.3em
+      margin-top: 1.8em
+      
+    :global(h4)
+      font-size: 1.1em
+      margin-top: 1.5em
+      
+    :global(a)
+      color: #872db4
+      text-decoration: none
+      
+      &:hover
+        text-decoration: underline
+        
+    :global(ul), :global(ol)
+      margin-top: 1.71em
+      margin-bottom: 1.71em
+      padding-left: 2rem
+      
+    :global(li)
+      margin: 0.5em 0
+      
+    :global(img)
+      max-width: 100%
+      width: auto
+      max-height: 30rem
+      height: auto
+      display: block
+      margin: auto
+      
+    :global(blockquote)
+      background-color: #eee
+      margin: 1.9em 0
+      padding: 1.35em 1em 0
+      font-style: oblique
+      
+      :global(p)
+        margin: 0
+        padding: 0 0 0.95em
+        
+    :global(code)
+      background: #f5f5f5
+      padding: 0.2em 0.4em
+      border-radius: 3px
+      font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace
+      font-size: 0.9em
+      
+    :global(pre)
+      background: #f8f8f8
+      padding: 1rem
+      border-radius: 5px
+      overflow-x: auto
+      margin: 1.9em 0
+      
+      :global(code)
+        background: none
+        padding: 0
+        
+    :global(table)
+      width: 100%
+      border-collapse: collapse
+      border-spacing: 0
+      margin: 1.9em 0
+      
+    :global(th)
+      font-weight: bold
+      border-bottom: 3px solid #ddd
+      padding-bottom: 0.5em
+      
+    :global(td)
+      border-bottom: 1px solid #ddd
+      padding: 10px 0
+
+  .post-footer
+    margin-top: 3rem
+    padding-top: 2rem
+    border-top: 1px solid #ddd
+
+  .back-link
+    color: #872db4
+    text-decoration: none
+    font-weight: 300
+    
+    &:hover
+      text-decoration: underline
+</style>
