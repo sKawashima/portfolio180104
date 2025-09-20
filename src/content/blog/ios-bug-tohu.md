@@ -3,7 +3,7 @@ title: font-familyが-apple-systemに指定されている状態でtext-align:ju
 tags:
   - Tohu
   - Web Frontend
-date: 2019-07-09 9:00:0
+date: 2019-07-09 09:00:00
 category: Development
 ---
 
@@ -17,7 +17,7 @@ sKawashimaです。
 もし何か分かりましたら、[こちら](https://qiita.com/sKawashima/items/5232880716424397e9d8)まで情報をいただけるとありがたいです。
 とりあえず、条件は大体わかったのでこちらにもまとめてあります。
 
-{% linkPreview https://qiita.com/sKawashima/items/5232880716424397e9d8 %}
+[Qiita記事: iOSのSafariのみで発生するバグ調査](https://qiita.com/sKawashima/items/5232880716424397e9d8)
 
 <!-- more -->
 

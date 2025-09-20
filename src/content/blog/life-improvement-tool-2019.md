@@ -29,7 +29,7 @@ category: Tool
 
 ### Todoist
 
-{% linkPreview https://todoist.com/ %}
+[Todoist](https://todoist.com/)
 
 タスク管理ツールです。
 
@@ -51,7 +51,7 @@ Google Calendarにタスクを追加するとその期日のタスクがTodoist�
 
 ### RescueTime
 
-{% linkPreview https://www.rescuetime.com/ %}
+[RescueTime](https://www.rescuetime.com/)
 
 
 PCで何にどれだけ時間を使ったかを残せるサービスです。
@@ -65,7 +65,7 @@ PCにインストールすれば「何もしなくても」記録できるので
 
 ### Toggl
 
-{% linkPreview https://toggl.com/ %}
+[Toggl](https://toggl.com/)
 
 時間を計測する価値がある場合にのみ使うタスク時間計測ツールです。
 特定のタスクにどれだけの時間を掛けたのかを計測できるので、自己評価の指標になります。
@@ -77,7 +77,7 @@ RescueTimeと違い自分でスタート/ストップを押すので、自己申
 
 ### Slack + 各種App
 
-{% linkPreview https://slack.com/ %}
+[Slack](https://slack.com/)
 
 コミュニケーションツールであるSlackですが、自分は個人ワークスペースを作って情報収集ツールとして使用しています。
 最近Inoreader（RSSリーダー）を使わなくなってこっちに移行したので、その話にも一瞬触れます。
@@ -86,7 +86,7 @@ Appと一緒に詳しく紹介していきます。
 
 #### RSS
 
-{% linkPreview https://slack.com/apps/A0F81R7U7-rss %}
+[RSS（Slackアプリ）](https://slack.com/apps/A0F81R7U7-rss)
 
 最近知らない人が増えているらしいRSSです。
 有名どころであれば大抵のブログは監視できます。
@@ -108,7 +108,7 @@ App数が1つの扱いなので無料プランでも安心です。
 
 #### Twitter
 
-{% linkPreview https://slack.com/apps/A0F7XDW93-twitter %}
+[Twitter（Slackアプリ）](https://slack.com/apps/A0F7XDW93-twitter)
 
 外すわけには行かないTwitter。
 
@@ -122,7 +122,7 @@ Slackの通知が来るので安心です。
 
 #### GitHub
 
-{% linkPreview https://slack.com/apps/A8GBNUWU8-github %}
+[GitHub（Slackアプリ）](https://slack.com/apps/A8GBNUWU8-github)
 
 個人開発のときに使ってます。
 
@@ -132,7 +132,7 @@ CIの通知が主目的ですね。
 
 #### Statsbot
 
-{% linkPreview https://slack.com/apps/A0GP9E18S-statsbot %}
+[Statsbot（Slackアプリ）](https://slack.com/apps/A0GP9E18S-statsbot)
 
 Google Analyticsのデータを元にグラフを作成し、定期的にSlackに貼ることができます。
 
@@ -144,7 +144,7 @@ Webサービスの方でグラフの作成と通知の設定ができるので�
 
 ### Pocket
 
-{% linkPreview https://getpocket.com %}
+[Pocket](https://getpocket.com)
 
 一言で表すと「あとで読む記事蓄積サービス」です。
 スマホからは共有→Pocketを選択、PCからはGoogle ChromeのPocket拡張機能で好きな記事を蓄積できます。
@@ -158,7 +158,7 @@ Pocketアプリからこの機能を呼び出すと、蓄積した記事の文�
 
 ### Scrapbox
 
-{% linkPreview https://scrapbox.io %}
+[Scrapbox](https://scrapbox.io)
 
 ありとあらゆる情報を流し込めるWikiです。
 あるページからあるページにリンクを貼ると、被リンク側からリンク元が辿れるようになるある種ザナドゥ的なリンクの仕様を持っています。

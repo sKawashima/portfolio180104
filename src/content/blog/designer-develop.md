@@ -15,10 +15,8 @@ category: Design
 そんなわけで、**「デザイナーがエンジニアリングを学ぶメリットとデメリット」**を考えてみました。
 
 この記事は「[くふうカンパニー Advent Calendar 2019](https://qiita.com/advent-calendar/2019/kufu)」の3日目です。
-https://qiita.com/advent-calendar/2019/kufu
 
-Qiitaにも転載してあります。
-https://qiita.com/sKawashima/items/2ba555ef709729e79d2a
+Qiitaにも転載してあります：[デザイナーがエンジニアリングを学ぶメリットとデメリット](https://qiita.com/sKawashima/items/2ba555ef709729e79d2a)
 
 この記事は、**ルームシェア相手**にして普段**グラフィックデザイナー**やりつつ業務として**Unityなどの開発**を経験がある友人との対談を元に執筆しています。
 協力ありがとう。
@@ -44,7 +42,7 @@ https://qiita.com/sKawashima/items/2ba555ef709729e79d2a
 <div class="link-preview"><a href="https://trends.zaim.net/" class="link-preview" target="_blank" rel="noopener"><div class="link-area"><div class="og-image"><img src="https://trends.zaim.net/alphaOGP.jpg" alt="Zaim trends alpha"></div><div class="descriptions"><div class="og-title">Zaimトレンド</div><div class="og-description">Zaim トレンドは、家計簿サービス「Zaim」の買い物データを元に「最近、話題のあの商品、本当はどんな人が買ってるの？」や「いまニュースになっている、あのお店は誰に人気なの？」などが分かる、無料の発見サービスです。</div></div></div></a></div>
 また、先日出場した**ハッカソン「SPAJAM2019」**では**サーバーサイドエンジニア**（Node.js/TypeScriptとMongo in Dockerで画像受け取れるCRUD API作っただけ）として参加し、**チームとして全国優勝を果たしました。**
 
-{% linkPreview https://spajam.jp/2019/final/result/ %}
+[SPAJAM2019 全国大会結果](https://spajam.jp/2019/final/result/)
 
 ちなみに、**対談相手**はこのハッカソンで**同チーム内のデザイナー**として参加し、**開発するアプリのUI**と**めっちゃわかりやすい発表プレゼン資料**を作っていました。
 彼も色々と開発経験があるなどエンジニアとしての側面を持っています。

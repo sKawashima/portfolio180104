@@ -14,7 +14,7 @@ category: Hackathon
 今回参加したのは、"日本最大の学生向けハックイベント"ことJP HACKS 2018、参加は東京会場です。
 案の定、前回と同じく**コンセプトとアイデアのチーム!kie**で参加してきました。
 
-{% linkPreview https://2018.jphacks.com/ %}
+[JPHACKS2018 公式サイト](https://2018.jphacks.com/)
 
 {% post_link spajam2018-first-hackathon 前回 %}は運営に煽られるひどい体験をしましたが、今回は非常に良い体験ができました。各メンバーにとって、達成感と反省点が同時に見えたんじゃないかと勝手に思っています。僕にとっても、学ぶことが多く、そして反省することも多いイベントでした。
 
@@ -88,11 +88,11 @@ category: Hackathon
 
 #### 提出動画
 
-{% youtube 2zG1shL9Hxc %}
+[YouTube動画: JPHACKS2018 発表動画](https://www.youtube.com/watch?v=2zG1shL9Hxc)
 
 #### 提出リポジトリ（仕様書とプログラムコード）
 
-{% linkPreview https://github.com/jphacks/TK_1814 %}
+[GitHub: JPHACKS2018 プロジェクト](https://github.com/jphacks/TK_1814)
 
 #### 提案物の概要
 

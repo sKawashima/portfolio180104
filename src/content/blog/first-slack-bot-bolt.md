@@ -41,7 +41,7 @@ Boltでの開発のイメージを持つために、先に使ってみてわか�
 
 といっても、公式のHello Worldドキュメントが優秀なのでそれに沿って作業しました。
 
-{% linkPreview https://slack.dev/bolt/ja-jp/tutorial/getting-started %}
+[Bolt公式ドキュメント: Getting Started](https://slack.dev/bolt/ja-jp/tutorial/getting-started)
 
 ### Bolt Init
 
