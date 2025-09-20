@@ -23,6 +23,17 @@ const works = defineCollection({
   }),
 })
 
+const blog = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    date: z.union([z.string(), z.date()]).transform((date) => new Date(date)),
+    tags: z.array(z.string()).optional(),
+    category: z.string().optional(),
+  }),
+})
+
 export const collections = {
   works,
+  blog,
 }
