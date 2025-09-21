@@ -48,7 +48,7 @@ category: Design
 
 ### Apple Music
 
-![apple_music](/blog/apple_music.png)
+![apple_music](/blog/research-prices-design/apple_music.png)
 
 #### プラン数
 
@@ -75,7 +75,7 @@ category: Design
 
 ### Asana
 
-![asana](/blog/asana.png)
+![asana](/blog/research-prices-design/asana.png)
 
 #### プラン数
 
@@ -102,7 +102,7 @@ category: Design
 
 ### Cacoo
 
-![cacoo](/blog/cacoo.png)
+![cacoo](/blog/research-prices-design/cacoo.png)
 
 #### プラン数
 
@@ -132,7 +132,7 @@ category: Design
 
 ### Dribbble
 
-![dribbble](/blog/dribbble.png)
+![dribbble](/blog/research-prices-design/dribbble.png)
 
 #### プラン数
 
@@ -157,7 +157,7 @@ category: Design
 
 ### Dyton Technology +
 
-![dyson_technology](/blog/dyson_technology.png)
+![dyson_technology](/blog/research-prices-design/dyson_technology.png)
 
 #### プラン数
 
@@ -183,7 +183,7 @@ category: Design
 
 ### Figma
 
-![figma](/blog/figma.png)
+![figma](/blog/research-prices-design/figma.png)
 
 #### プラン数
 
@@ -210,7 +210,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Google Play Music
 
-![google_play_music](/blog/google_play_music.png)
+![google_play_music](/blog/research-prices-design/google_play_music.png)
 
 #### プラン数
 
@@ -236,7 +236,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### GREENa
 
-![greena](/blog/greena.png)
+![greena](/blog/research-prices-design/greena.png)
 
 #### プラン数
 
@@ -264,7 +264,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### 新しいKyash Card
 
-![kyash](/blog/kyash.png)
+![kyash](/blog/research-prices-design/kyash.png)
 
 #### プラン数
 
@@ -290,7 +290,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### LINE WORKS
 
-![line_works](/blog/line_works.png)
+![line_works](/blog/research-prices-design/line_works.png)
 
 #### プラン数
 
@@ -316,7 +316,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Nintendo Switch Online
 
-![nintendo_switch_online](/blog/nintendo_switch_online.png)
+![nintendo_switch_online](/blog/research-prices-design/nintendo_switch_online.png)
 
 #### プラン数
 
@@ -341,7 +341,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Origin access
 
-![origin_access](/blog/origin_access.png)
+![origin_access](/blog/research-prices-design/origin_access.png)
 
 #### プラン数
 
@@ -367,7 +367,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Qiita: Team
 
-![qiita_team](/blog/qiita_team.png)
+![qiita_team](/blog/research-prices-design/qiita_team.png)
 
 #### プラン数
 
@@ -393,7 +393,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Scrapbox
 
-![scrapbox](/blog/scrapbox.png)
+![scrapbox](/blog/research-prices-design/scrapbox.png)
 
 ####  プラン数
 
@@ -422,7 +422,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Slack
 
-![slack](/blog/slack.png)
+![slack](/blog/research-prices-design/slack.png)
 
 ####  プラン数
 
@@ -450,7 +450,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 シークレットブラウジングでは表示が変わった。
 
-![slack-no-auth](/blog/slack-no-auth.png)
+![slack-no-auth](/blog/research-prices-design/slack-no-auth.png)
 
 #### プラン数
 
@@ -474,7 +474,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### todoist
 
-![todoist](/blog/todoist.png)
+![todoist](/blog/research-prices-design/todoist.png)
 
 #### プラン数
 
@@ -502,7 +502,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### WABTEDLY Admin
 
-![wantedly](/blog/wantedly.png)
+![wantedly](/blog/research-prices-design/wantedly.png)
 
 #### プラン数
 
@@ -531,7 +531,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Zeplin
 
-![zeplin](/blog/zeplin.png)
+![zeplin](/blog/research-prices-design/zeplin.png)
 
 #### プラン数
 
