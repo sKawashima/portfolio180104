@@ -48,7 +48,7 @@ category: Design
 
 ### Apple Music
 
-<img alt="apple_music" src="./research-prices-design/apple_music.png" />
+<img alt="apple_music" src="./apple_music.png" />
 
 #### プラン数
 
@@ -75,7 +75,7 @@ category: Design
 
 ### Asana
 
-<img alt="asana" src="./research-prices-design/asana.png" />
+<img alt="asana" src="./asana.png" />
 
 #### プラン数
 
@@ -102,7 +102,7 @@ category: Design
 
 ### Cacoo
 
-<img alt="cacoo" src="./research-prices-design/cacoo.png" />
+<img alt="cacoo" src="./cacoo.png" />
 
 #### プラン数
 
@@ -132,7 +132,7 @@ category: Design
 
 ### Dribbble
 
-<img alt="dribbble" src="./research-prices-design/dribbble.png" />
+<img alt="dribbble" src="./dribbble.png" />
 
 #### プラン数
 
@@ -157,7 +157,7 @@ category: Design
 
 ### Dyton Technology +
 
-<img alt="dyson_technology" src="./research-prices-design/dyson_technology.png" />
+<img alt="dyson_technology" src="./dyson_technology.png" />
 
 #### プラン数
 
@@ -183,7 +183,7 @@ category: Design
 
 ### Figma
 
-<img alt="figma" src="./research-prices-design/figma.png" />
+<img alt="figma" src="./figma.png" />
 
 #### プラン数
 
@@ -210,7 +210,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Google Play Music
 
-<img alt="google_play_music" src="./research-prices-design/google_play_music.png" />
+<img alt="google_play_music" src="./google_play_music.png" />
 
 #### プラン数
 
@@ -236,7 +236,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### GREENa
 
-<img alt="greena" src="./research-prices-design/greena.png" />
+<img alt="greena" src="./greena.png" />
 
 #### プラン数
 
@@ -264,7 +264,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### 新しいKyash Card
 
-<img alt="kyash" src="./research-prices-design/kyash.png" />
+<img alt="kyash" src="./kyash.png" />
 
 #### プラン数
 
@@ -290,7 +290,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### LINE WORKS
 
-<img alt="line_works" src="./research-prices-design/line_works.png" />
+<img alt="line_works" src="./line_works.png" />
 
 #### プラン数
 
@@ -316,7 +316,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Nintendo Switch Online
 
-<img alt="nintendo_switch_online" src="./research-prices-design/nintendo_switch_online.png" />
+<img alt="nintendo_switch_online" src="./nintendo_switch_online.png" />
 
 #### プラン数
 
@@ -341,7 +341,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Origin access
 
-<img alt="origin_access" src="./research-prices-design/origin_access.png" />
+<img alt="origin_access" src="./origin_access.png" />
 
 #### プラン数
 
@@ -367,7 +367,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Qiita: Team
 
-<img alt="qiita_team" src="./research-prices-design/qiita_team.png" />
+<img alt="qiita_team" src="./qiita_team.png" />
 
 #### プラン数
 
@@ -393,7 +393,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Scrapbox
 
-<img alt="scrapbox" src="./research-prices-design/scrapbox.png" />
+<img alt="scrapbox" src="./scrapbox.png" />
 
 ####  プラン数
 
@@ -422,7 +422,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Slack
 
-<img alt="slack" src="./research-prices-design/slack.png" />
+<img alt="slack" src="./slack.png" />
 
 ####  プラン数
 
@@ -450,7 +450,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 シークレットブラウジングでは表示が変わった。
 
-<img alt="slack-no-auth" src="./research-prices-design/slack-no-auth.png" />
+<img alt="slack-no-auth" src="./slack-no-auth.png" />
 
 #### プラン数
 
@@ -474,7 +474,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### todoist
 
-<img alt="todoist" src="./research-prices-design/todoist.png" />
+<img alt="todoist" src="./todoist.png" />
 
 #### プラン数
 
@@ -502,7 +502,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### WABTEDLY Admin
 
-<img alt="wantedly" src="./research-prices-design/wantedly.png" />
+<img alt="wantedly" src="./wantedly.png" />
 
 #### プラン数
 
@@ -531,7 +531,7 @@ Organizationでのみ、Everything in Professional, plus... というように�
 
 ### Zeplin
 
-<img alt="zeplin" src="./research-prices-design/zeplin.png" />
+<img alt="zeplin" src="./zeplin.png" />
 
 #### プラン数
 

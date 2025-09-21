@@ -59,12 +59,12 @@ category: Development
 
 ### アプリ紹介とこだわり
 
-<img src='./tokt_1-night-development/main.png' alt='メイン画面' style='border: solid 1px #ccc'>
+<img src='./main.png' alt='メイン画面' style='border: solid 1px #ccc'>
 
 **ユーザーが「必要な出費」か「不要な出費(=無駄遣い)」かを判断** しながら出費を入力すると **それぞれの値段と割合が可視化** されます。
 また、ユーザーは**任意のタイミングでリセット** することも出来ます。
 
-<img src='./tokt_1-night-development/input.png' alt='入力画面' style='border: solid 1px #ccc'>
+<img src='./input.png' alt='入力画面' style='border: solid 1px #ccc'>
 
 さらに、 **入力画面ではテキストボックスに数式を入力できます** 。
 複数のレシートを別々に入力することは時間の浪費と考え、直接計算できるようにしました。

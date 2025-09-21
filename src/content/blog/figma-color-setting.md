@@ -21,7 +21,7 @@ Figmaアプリとブラウザで色が異なる表示になってしまうこと
 
 ## 起きること
 
-<img src="./figma-color-setting/example.png" alt="事例">
+<img src="./example.png" alt="事例">
 左がFigmaアプリ、右が同Figmaをブラウザで表示した画面です。
 スクリーンショットでもわかるくらい差が出ます。
 
@@ -29,10 +29,10 @@ Figmaアプリとブラウザで色が異なる表示になってしまうこと
 最初にとりあえず統一する方法だけ紹介します。
 メニューバーのColor Spaceの設定を**sRGB**に変更するだけです。
 
-<img src="./figma-color-setting/setting.png" alt="設定画面">
+<img src="./setting.png" alt="設定画面">
 左上のメニューバーから設定を変更できます。
 
-<img src="./figma-color-setting/fixed.png" alt="設定後の表示">
+<img src="./fixed.png" alt="設定後の表示">
 同じ表示になりました。
 
 ## なぜFigmaアプリとブラウザの色に差が生まれるのか
