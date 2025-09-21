@@ -26,20 +26,20 @@ category: Development
 
 ## START
 
-```shell:各種環境が導入されていることを確認
+```shell各種環境が導入されていることを確認
 ruby -v
 sqlite3 --version
 rails --version
 ```
 
-```shell:プロジェクト作成
+```shellプロジェクト作成
 rails new <プロジェクト名>
 # カレントディレクトリ/<プロジェクト名> にファイルが生成される
 ```
 
 ↑だと、正直いらない`coffee script`とかまで自動導入されてしまうので、
 
-```shell:プロジェクト作成：bandleスキップ
+```shellプロジェクト作成：bandleスキップ
 rails new <プロジェクト名> -B
 # カレントディレクトリ/<プロジェクト名> にファイルが生成される
 ```
@@ -48,7 +48,7 @@ rails new <プロジェクト名> -B
 
 ### .sassファイルを生成するようにする
 
-```ruby:config/application.rbに追記
+```rubyconfig/application.rbに追記
 config.sass.preferred_syntax = :sass
 ```
 
@@ -56,18 +56,18 @@ config.sass.preferred_syntax = :sass
 
 Gemfile: Node.js環境で言うところのpackage.json内依存モジュール一覧と似たようなもの。
 
-```ruby:CoffeeScript無効化（コメントアウトのみ）
+```rubyCoffeeScript無効化（コメントアウトのみ）
 # gem 'coffee-rails', '~> 4.2'
 ```
 
-```ruby:Haml導入
+```rubyHaml導入
 gem 'hamlit-rails'
 # いろいろ種類があるがこれが一番高速らしい
 # Slimも魅力的であるが、slim-railsより高速らしいのでこちらを選択。
 gem 'erb2haml'
 ```
 
-```ruby:Debug環境強化
+```rubyDebug環境強化
 group :development do
   # 追記
   # better errors
@@ -78,7 +78,7 @@ end
 gem 'pry-byebug'
 ```
 
-```ruby:開発補助系gem
+```ruby開発補助系gem
 group :development do
   # 追記
   # モデルファイルの情報追加
@@ -108,7 +108,7 @@ end
 
 ## Model
 
-```shell:ファイル生成
+```shellファイル生成
 rails g model Name sub:string sub:text...
 # Name: モデル名、単数かつ頭大文字がよし
 # sub: 各パラメータ
@@ -116,11 +116,11 @@ rails g model Name sub:string sub:text...
 # created_atとupdated_atは自動で生成される
 ```
 
-```shell:DB生成
+```shellDB生成
 rails db:migrate
 ```
 
-```shell:DBを全削除
+```shellDBを全削除
 rails db:migrate:reset
 ```
 
@@ -129,13 +129,13 @@ rails db:migrate:reset
 `db/seeds.rb`をいじる。
 rubyを直接書ける。
 
-```ruby:4つの初期データを生成する場合
+```ruby4つの初期データを生成する場合
 5.times do |i|
   Name.create(title: 'title #{i}', body: 'body #{i}')
 end
 ```
 
-```shell:seedから初期データ生成
+```shellseedから初期データ生成
 rails db:seed
 ```
 
@@ -143,14 +143,14 @@ rails db:seed
 
 `app/models/name.rb`をいじる。
 
-```ruby:Validation
+```rubyValidation
 validates :sub, presence: true, length: { minimum: 3 }
 # presence: true > 入力必須
 ```
 
 これを定義した場合、サーバーサイドValidationでErrorが出た場合のController/Viewを定義する必要があるので留意（[参考](https://dotinstall.com/lessons/basic_rails_v3/41817)）。
 
-```ruby:別のModelとの紐付け
+```ruby別のModelとの紐付け
 has_many :name2s, dependent: destroy
 ```
 
@@ -158,7 +158,7 @@ has_many :name2s, dependent: destroy
 
 ModelとViewをつなぐ役割。Modelを基準に生成する。
 
-```shell:ファイル生成
+```shellファイル生成
 rails g controller Names
 # app/controllers/names_controller.rbが生成
 ```
@@ -169,29 +169,29 @@ rails g controller Names
 
 `config/routes.rb`を編集する。
 
-```ruby:Modelについて自動生成
+```rubyModelについて自動生成
 resources :names
 ```
 
-```ruby:別Modelに紐付けたModelについて自動生成
+```ruby別Modelに紐付けたModelについて自動生成
 resources :names do
   resources :name2s
 end
 ```
 
-```ruby:一部のroutingのみを自動生成
+```ruby一部のroutingのみを自動生成
 resources :names, only: [:create, :destroy]
 ```
 
-```ruby:一部のrouting以外を自動生成
+```ruby一部のrouting以外を自動生成
 resources :names, except: [:create, :destroy]
 ```
 
-```ruby:root(/)指定
+```rubyroot(/)指定
 root 'names#view名'
 ```
 
-```shell:全Routing確認
+```shell全Routing確認
 rails routes
 
 # これを基準に関数を作ったりPrefixを使ったりできる
@@ -199,13 +199,13 @@ rails routes
 
 ### ファイル編集例
 
-```ruby:一覧取得
+```ruby一覧取得
 def index
   @names = Name.all.order(created_at: 'desc')
 end
 ```
 
-```ruby:Requestパラメータの利用
+```rubyRequestパラメータの利用
 # GETやPOSTで呼ばれた際に使える（routesで確認）
 def show
   @name = Name.find(params[:id])
@@ -214,7 +214,7 @@ end
 
 `all.order`や`find`は**Active Record**を参照。
 
-```ruby:Modelの追加保存（フォームから呼び出す形式で）
+```rubyModelの追加保存（フォームから呼び出す形式で）
 def create
 # @name = Name.new(param.[:name])では「厳密な引数指定をしていない」=「悪意のあるリクエストを受け付けてしまうおそれがある」というエラーが出る
   @name = Name.new(param.require(:name).permit(:sub1, :sub2))
@@ -224,7 +224,7 @@ def create
 end
 ```
 
-```ruby:Controller内の関数
+```rubyController内の関数
 def create
   @name = Name.new(name_params)
   @name.save
@@ -238,7 +238,7 @@ private
 end
 ```
 
-```ruby:404を返す
+```ruby404を返す
 render :status => 404
 ```
 
@@ -261,17 +261,17 @@ Model-Controllerに紐付けて作る。
 
 #### erb記法
 
-```erb:ruby式を埋め込む
+```erbruby式を埋め込む
 <% %>
 ```
 
-```erb:ruby式を埋め込み、評価結果をエスケープして埋め込む
+```erbruby式を埋め込み、評価結果をエスケープして埋め込む
 <%= %>
 ```
 
 ### ファイル編集例(erb)
 
-```erb:一覧表示
+```erb一覧表示
 <h2>一覧</h2>
 <ul>
   <% @names.each do |post| %>
@@ -284,12 +284,12 @@ Model-Controllerに紐付けて作る。
 
 #### ファイル分割
 
-```erb:_hello.html.erb
+```erb_hello.html.erb
 <!-- 正式名称：Partial -->
 <p>hello</p>
 ```
 
-```erb:index.html.erb
+```erbindex.html.erb
 <%= render 'hello' %>
 ```
 
@@ -297,7 +297,7 @@ Model-Controllerに紐付けて作る。
 
 関数的動きをする決まった書き方。
 
-```erb:link_to
+```erblink_to
 <h2>一覧</h2>
 <ul>
   <% @names.each do |post| %>
@@ -308,40 +308,40 @@ Model-Controllerに紐付けて作る。
 </ul>
 ```
 
-```erb:routesのPrefixの利用
+```erbroutesのPrefixの利用
 <%= link_to '表示する文字列', Prefix_path %>
 ```
 
-```erb:IDパラメータを渡す
+```erbIDパラメータを渡す
 <%= link_to '表示する文字列', Prefix_path(name.id) %>
 ```
 
-```erb:IDパラメータを渡す(省略形)
+```erbIDパラメータを渡す(省略形)
 <%= link_to '表示する文字列', Prefix_path(name) %>
 ```
 
-```erb:methodの指定（Deleteなどに使う）
+```erbmethodの指定（Deleteなどに使う）
 <%= link_to '表示する文字列', Prefix_path(name), method: :method %>
 ```
 
-```erb:確認ダイアログを表示
+```erb確認ダイアログを表示
 <%= link_to '表示する文字列', Prefix_path(name), method: :method, data: { cinfirm: '確認？' }%>
 ```
 
-```erb:改行で可視化できる
+```erb改行で可視化できる
 <%= link_to '表示する文字列',
     Prefix_path(name),
     method: :method,
     data: { cinfirm: '確認？' }%>
 ```
 
-```erb:image_tag
+```erbimage_tag
 <!-- app/assets/images/ にファイルを設置 -->
 <!-- ヘルパーは()で設定を囲める -->
 <%= image_tag('ファイル名.png', class:className) %>
 ```
 
-```erb:form_for
+```erbform_for
 <%= form_for :name, url: names_path do |f| %>
 <p>
   <%= f.text_field :sub, placeholder: 'enter sub' %>
@@ -350,7 +350,7 @@ Model-Controllerに紐付けて作る。
 </p>
 ```
 
-```erb:simple_format
+```erbsimple_format
 <p><%= simple_format @name.sub %></p>
 <!-- 改行を適切なタグに変えてくれる -->
 ```
@@ -359,22 +359,22 @@ Model-Controllerに紐付けて作る。
 
 直接データベースを弄ったりできる：ActiveRecord。
 
-```shell:入る
+```shell入る
 rails c
 ```
 
-```shell:モデルにデータを追加
+```shellモデルにデータを追加
 Name.create(title: 'title 2', body: 'body 2')
 ```
 
-```shell:モデルにデータを追加（一旦定義）
+```shellモデルにデータを追加（一旦定義）
 # 定義
 n = Name.new(title: 'title 1', body: 'body 1')
 # 書き込み
 n.save
 ```
 
-```shell:モデルのデータを確認
+```shellモデルのデータを確認
 Name.all
 ```
 
@@ -384,33 +384,33 @@ railsで管理するデータベースのCUIを操作する。
 データを見ながら編集するときなどに使う。
 SQLで操作できる。
 
-```shell:入る
+```shell入る
 rails db
 ```
 
-```shell:テーブル一覧取得
+```shellテーブル一覧取得
 .tables
 ```
 
 Modelのテーブルは`names`のように小文字＋複数形になっている。
 
-```shell:特定のテーブルのデータ一覧取得
+```shell特定のテーブルのデータ一覧取得
 select * from names;
 # シンプルなSQL文
 ```
 
-```shell:
+```shell
 .quit
 ```
 
 ## session, cookies
 
-```ruby:設定
+```ruby設定
 session[:name] = a
 cookies[:name] = a
 ```
 
-```ruby:存在確認
+```ruby存在確認
 if session[:name]
 if cookies[:name]
 ```
