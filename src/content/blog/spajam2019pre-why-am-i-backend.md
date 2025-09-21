@@ -62,7 +62,13 @@ ryu-gがメンバー紹介書いてくれました。
 
 ryu-gの当日のツイート。
 
-[Twitter: @a3y53](https://twitter.com/a3y53/status/1137164611252133889)
+<div class="twitter-embed-container">
+  <blockquote class="twitter-tweet" data-theme="light" data-width="550">
+    <a href="https://twitter.com/a3y53/status/1137164611252133889">
+      @a3y53 のツイートを見る
+    </a>
+  </blockquote>
+</div>
 
 ## サーバーサイドで使った技術とツール
 

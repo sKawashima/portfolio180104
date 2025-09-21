@@ -13,7 +13,13 @@ category: Development
 
 先日、以前から知り合いで最近交流が活発になった後輩の **yamaken** 君が**ワードウルフのiOSアプリを公開**しました。
 
-[Twitter: @yamakentoc](https://twitter.com/yamakentoc/status/979295582479990785)
+<div class="twitter-embed-container">
+  <blockquote class="twitter-tweet" data-theme="light" data-width="550">
+    <a href="https://twitter.com/yamakentoc/status/979295582479990785">
+      @yamakentoc のツイートを見る
+    </a>
+  </blockquote>
+</div>
 
 非常にめでたい。ぜひ、DLして遊んであげて下さい。
 
