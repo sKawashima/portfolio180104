@@ -1,0 +1,116 @@
+---
+import { getCollection } from 'astro:content'
+import Footer from '../../components/Footer.astro'
+import Gradation from '../../components/Gradation.astro'
+import Nav from '../../components/Nav.astro'
+import Layout from '../../layouts/Layout.astro'
+
+const blogPosts = await getCollection('blog')
+const sortedPosts = blogPosts.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+)
+---
+
+<Layout title="Blog | sKawashima">
+  <Gradation />
+  <Nav />
+  <div class="container">
+    <h1 class="title">Blog</h1>
+    <div class="posts">
+      {sortedPosts.map((post) => (
+        <article class="post-preview">
+          <h2><a href={`/blog/${post.slug}/`}>{post.data.title}</a></h2>
+          <div class="meta">
+            <time>{post.data.date.toLocaleDateString('ja-JP')}</time>
+            {post.data.category && <span class="category">{post.data.category}</span>}
+          </div>
+          {post.data.tags && (
+            <div class="tags">
+              {post.data.tags.map((tag) => (
+                <span class="tag">#{tag}</span>
+              ))}
+            </div>
+          )}
+        </article>
+      ))}
+    </div>
+  </div>
+  <Footer />
+</Layout>
+
+<style lang="sass">
+  .container
+    max-width: 900px
+    margin: 0 auto
+    padding: 2rem
+    
+    @media screen and (max-width: 768px)
+      padding: 1rem
+
+  .title
+    font-family: Texta-Thin
+    font-size: 3.33em
+    color: #6b3b82
+    letter-spacing: 1px
+    margin: 25px 0 50px 0
+    text-align: center
+
+  .posts
+    display: flex
+    flex-direction: column
+    gap: 3rem
+
+  .post-preview
+    border-bottom: 1px solid #ddd
+    padding-bottom: 2rem
+    
+    &:last-child
+      border-bottom: none
+
+    h2
+      margin: 0 0 1rem 0
+      
+      a
+        color: #444
+        text-decoration: none
+        font-size: 1.5em
+        font-weight: bold
+        line-height: 1.2
+        transition: color 0.2s
+        
+        &:hover
+          color: #872db4
+
+  .meta
+    display: flex
+    align-items: center
+    gap: 1rem
+    margin-bottom: 1rem
+    font-size: 0.85rem
+    color: #999
+    
+    time
+      font-weight: 300
+
+  .category
+    background: #eee
+    color: #777
+    padding: 0.2rem 0.5rem
+    border-radius: 3px
+    font-size: 0.8rem
+    text-shadow: 0 1px #fff
+
+  .tags
+    display: flex
+    flex-wrap: wrap
+    gap: 0.5rem
+
+  .tag
+    color: #872db4
+    font-size: 0.85rem
+    font-weight: 300
+    letter-spacing: 0.05em
+    
+    &:hover
+      text-decoration: underline
+</style>

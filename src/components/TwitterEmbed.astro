@@ -1,0 +1,43 @@
+---
+export interface Props {
+  tweetId: string
+  username?: string
+}
+
+const { tweetId, username } = Astro.props
+---
+
+<div class="twitter-embed">
+  <blockquote class="twitter-tweet" data-theme="light">
+    <a href={`https://twitter.com/${username || 'twitter'}/status/${tweetId}`}>
+      Loading tweet...
+    </a>
+  </blockquote>
+</div>
+
+<script>
+  // Twitter埋め込みスクリプトを動的に読み込み
+  if (typeof window !== 'undefined' && !window.twttr) {
+    const script = document.createElement('script')
+    script.src = 'https://platform.twitter.com/widgets.js'
+    script.async = true
+    script.charset = 'utf-8'
+    document.head.appendChild(script)
+  } else if (window.twttr) {
+    // 既にスクリプトが読み込まれている場合は再描画
+    window.twttr.widgets.load()
+  }
+</script>
+
+<style>
+  .twitter-embed {
+    margin: 1.5rem 0
+    display: flex
+    justify-content: center
+  }
+  
+  .twitter-tweet {
+    max-width: 550px !important
+    width: 100% !important
+  }
+</style>
