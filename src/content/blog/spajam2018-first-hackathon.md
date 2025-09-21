@@ -168,7 +168,7 @@ XDのプロトタイプ機能で画面の遷移を設計し、エンジニアに
 
 #### 運営がSNSで煽ってくる
 
-{% twitter https://twitter.com/e__koma/status/995198296518942720 %}
+[Twitter: @e__koma](https://twitter.com/e__koma/status/995198296518942720)
 
 運営にうだうだ言われた時に、「タイムスケジュール書き出してみて」的なことを言われて書いたスケジュールです。
 
@@ -178,7 +178,7 @@ XDのプロトタイプ機能で画面の遷移を設計し、エンジニアに
 
 #### 運営がSNSで煽ってくる2
 
-{% twitter https://twitter.com/e__koma/status/995246836095959040 %}
+[Twitter: @e__koma](https://twitter.com/e__koma/status/995246836095959040)
 
 何がどう「ｗ」なのか、理解できませんでした。
 少なくとも、会場に居たときは煽られているような感覚でした。
