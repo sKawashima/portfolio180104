@@ -82,4 +82,4 @@ Form.svelte
 Svelte、動作速度から記述方法まで僕の「好み」だったので、ひたすら孤独に推しています。
 Svelteの良さを紹介している記事を貼っておくので、興味のある方は是非！
 
-{% linkPreview https://qiita.com/so99ynoodles/items/a8144ced1a21467c6300 %}
+[Svelteの良さを紹介している記事](https://qiita.com/so99ynoodles/items/a8144ced1a21467c6300)

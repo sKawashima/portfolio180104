@@ -11,7 +11,7 @@ category: Development
 
 これを解決します。
 
-```js:とある.vueファイル(エラー)
+```js
 export default {
   data: () => {
     return {
@@ -48,7 +48,7 @@ export default {
 
 ## 対処法
 
-```js:とある.vueファイル
+```js
 var vm // --①
 export default {
   data: () => {

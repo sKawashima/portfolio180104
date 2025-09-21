@@ -9,7 +9,7 @@ tags:
   - TypeScript
   - MongoDB Atlas
   - Now.sh
-date: 2019-06-29 10:00:0
+date: 2019-06-29 10:00:00
 category: Hackathon
 ---
 
@@ -18,7 +18,7 @@ sKawashimaです。
 以前{% post_link 初めてハッカソンに出場して考えたこと SPAJAM2018に出場した時 %}に「もう二度と出たくない」とか言ってましたが、知人からの誘いと思想の転換から再度SPAJAMに参加しました。
 参加したのは2019/6/8〜9に開催された**SPAJAM2019 東京予選B会場**です。
 
-{% linkPreview https://spajam.jp/2019/entry/tokyo-b/ %}
+[SPAJAM2019 東京予選B会場](https://spajam.jp/2019/entry/tokyo-b/)
 
 最近このブログの更新はハッカソン出場記録ばかりになってきてますが、次以降はいろいろ別のこと書くので今回はご容赦を。
 

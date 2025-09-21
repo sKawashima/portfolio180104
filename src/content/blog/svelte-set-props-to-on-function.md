@@ -35,7 +35,7 @@ category: Development
 
 上記のコードや知見は以下のサイトを参考/引用させていただいております。
 
-{% linkPreview https://tekk.hatenadiary.org/entry/20150131/1422711247 %}
+[参考記事: JavaScriptで要素を非表示にする方法](https://tekk.hatenadiary.org/entry/20150131/1422711247)
 
 ## 解決方法
 
