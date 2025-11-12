@@ -14,7 +14,7 @@
     "astro": "^5.15.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.3.4",
+    "@biomejs/biome": "^2.3.5",
     "@evilmartians/lefthook": "^2.0.2",
     "sass-embedded": "^1.93.3"
   }
