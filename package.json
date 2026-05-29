@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.15",
-    "@evilmartians/lefthook": "^2.1.8",
+    "@evilmartians/lefthook": "^2.1.9",
     "sass-embedded": "^1.100.0"
   }
 }
